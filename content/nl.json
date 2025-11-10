@@ -1,0 +1,162 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Fout",
+    "notFound": "Niet Gevonden",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "close": "Sluiten",
+    "search": "Zoeken",
+    "dashboard": "Dashboard",
+    "language": "Taal"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "about": "Over",
+    "photos": "Foto's",
+    "search": "Zoeken"
+  },
+  "photos": {
+    "subtitle": "Ontdek onze collectie Lexus voertuigen",
+    "footerTitle": "Jouw IS250C of IS300H hier?",
+    "footerSubtitle": "Stuur een e-mail naar ",
+    "cookieConsent": {
+      "title": "Foto's liken?",
+      "message": "We willen graag cookies gebruiken om je gelikede foto's te onthouden. Geen tracking, alleen je voorkeuren.",
+      "allowButton": "Cookies Toestaan",
+      "denyButton": "Nee Bedankt"
+    }
+  },
+  "dashboard": {
+    "subtitle": "Overzicht van Lexus auto statistieken en analyses",
+    "carStatistics": "Auto Statistieken",
+    "registrationData": "",
+    "lastMonths": "Laatste 12 maanden",
+    "entries": "items",
+    "page": "Pagina",
+    "of": "van",
+    "monthly": "Maandelijks",
+    "daily": "Dagelijks",
+    "showMonthlyData": "Toon maandelijkse gegevens",
+    "showDailyData": "Toon dagelijkse gegevens",
+    "refreshData": "Gegevens vernieuwen",
+    "previousPage": "Vorige pagina",
+    "nextPage": "Volgende pagina",
+    "day": "Dag",
+    "month": "Maand",
+    "count": "Aantal",
+    "differences": "Verschillen",
+    "added": "Toegevoegd",
+    "removed": "Verwijderd",
+    "totalChanges": "Totaal wijzigingen",
+    "apiConnectionIssue": "API Verbindingsprobleem",
+    "retryConnection": "Opnieuw Proberen",
+    "noDataAvailable": "Geen gegevens beschikbaar",
+    "checkApiConnection": "Controleer API verbinding"
+  },
+  "car": {
+    "basicInformation": "Basisinformatie",
+    "registration": "Registratie",
+    "technicalSpecs": "Technische Specificaties",
+    "environmental": "Milieu",
+    "licensePlate": "Kenteken",
+    "brand": "Merk",
+    "model": "Model",
+    "vehicleType": "Voertuigtype",
+    "primaryColor": "Eerste Kleur",
+    "secondaryColor": "Tweede Kleur",
+    "firstRegistration": "Eerste Registratie",
+    "firstRegistrationNL": "Eerste Registratie NL",
+    "insuranceStatus": "Verzekeringsstatus",
+    "apkExpiry": "APK Vervaldatum",
+    "engineCylinders": "Motor Cilinders",
+    "engineDisplacement": "Cilinderinhoud",
+    "emptyWeight": "Leeggewicht",
+    "maxWeight": "Maximaal Gewicht",
+    "seats": "Zitplaatsen",
+    "doors": "Deuren",
+    "fuelType": "Brandstoftype",
+    "bodyType": "Carrosserietype",
+    "co2Emissions": "CO2 Uitstoot",
+    "wltpCo2": "WLTP CO2",
+    "fuelConsumption": "Brandstofverbruik",
+    "energyConsumption": "Energieverbruik",
+    "electricRange": "Elektrische Bereik",
+    "emissionCode": "Emissiecode",
+    "imported": "Geïmporteerd",
+    "insured": "Verzekerd",
+    "notInsured": "Niet Verzekerd",
+    "maxhp": "Max Vermogen",
+    "maxspeed": "Max Snelheid"
+  },
+  "language": {
+    "english": "Engels",
+    "dutch": "Nederlands",
+    "german": "Duits",
+    "french": "Frans"
+  },
+  "about": {
+    "title": "Over LexusTracker",
+    "subtitle": "Leer over onze technologie, gegevensbronnen en ontwerpfilosofie",
+    "technologyStack": "Technologie Stack",
+    "frontend": "Frontend Technologieën",
+    "features": "Functies",
+    "dataSource": "Gegevensbronnen",
+    "purposeAndDesign": "Doel & Ontwerp",
+    "whyThisDashboard": "Waarom dit platform?",
+    "designPhilosophy": "Ontwerpfilosofie",
+    "dashboardDescription": "LexusTracker biedt uitgebreide inzichten in Lexus IS250C voertuigen in Nederland, en helpt eigenaren en liefhebbers om voertuigstatistieken, registratietrends en marktgegevens te volgen via een intuïtieve dashboard-interface.",
+    "designPhilosophyDescription": "Gebouwd met moderne webtechnologieën en responsieve ontwerpprincipes, geeft ons platform prioriteit aan gebruikerservaring, prestaties en toegankelijkheid terwijl het real-time datavisualisatie en analyses biedt.",
+    "apiEndpoints": "API Eindpunten",
+    "dataProcessing": "Gegevensverwerking",
+    "technologies": {
+      "nextjs": "Next.js 14 met App Router",
+      "react": "React 18 met TypeScript",
+      "typescript": "TypeScript",
+      "tailwind": "Tailwind CSS & Radix UI",
+      "recharts": "Recharts voor Datavisualisatie"
+    },
+    "featuresList": {
+      "ssr": "Server-side rendering (SSR)",
+      "responsive": "Responsief ontwerp",
+      "darkMode": "Donkere modus met rode accenten passend bij de IS250C",
+      "interactive": "Interactieve grafieken en tabellen"
+    },
+    "apiList": {
+      "dailyMonthly": "Dagelijkse/Maandelijkse aantal statistieken",
+      "rdwData": "Real-time voertuigregistratiegegevens",
+      "differences": "Dagelijkse verschillen tracking",
+      "realTime": "Real-time gegevensupdates"
+    },
+    "processingList": {
+      "colorFilter": "Kleur-gebaseerde filtering",
+      "insurance": "Verzekeringsstatus informatie",
+      "importExport": "Import/export tracking",
+      "search": "Zoekfunctionaliteit"
+    }
+  },
+  "search": {
+    "title": "Auto's Zoeken",
+    "subtitle": "Zoek door alle geregistreerde Lexus voertuigen • Klik op elke auto voor gedetailleerde informatie",
+    "carDatabase": "Auto Database",
+    "databaseSubtitle": "Real-time voertuigregistratie zoeken • Klik op een rij voor details",
+    "searchPlaceholder": "Zoek op kenteken, merk, kleur...",
+    "noResults": "Geen resultaten gevonden",
+    "headers": {
+      "license": "Kenteken",
+      "model": "Model",
+      "color": "Kleur",
+      "insured": "Verzekerd?",
+      "buildyear": "Bouwjaar"
+    },
+    "yes": "Ja",
+    "no": "Nee"
+  },
+  "stats": {
+    "totalCars": "Totaal Auto's",
+    "redCars": "Rode Auto's",
+    "insuredCars": "Verzekerde Auto's",
+    "importedCars": "Geïmporteerde Auto's",
+    "updatedNow": "Nu bijgewerkt"
+  }
+}

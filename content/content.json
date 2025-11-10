@@ -1,0 +1,41 @@
+{
+  "photos": [
+    {
+      "id": 1,
+      "title": "Lexus IS 250C Front View",
+      "description": "Front angle of a Lexus IS 250C in red, showcasing its sleek coupe design.",
+      "image": "https://pyu0cnhpfktnlqct.public.blob.vercel-storage.com/4-L8a4uzkJoeX29lNpDtMUTFCABIS5JC.jpg",
+      "alt": "Front view of a red Lexus IS 250C convertible parked outdoors"
+    },
+    {
+      "id": 2,
+      "title": "Lexus IS 250C Side Profile",
+      "image": "https://pyu0cnhpfktnlqct.public.blob.vercel-storage.com/6-H6Cddw4QMYXyFdRDqi8lBBaNdkidHq.jpg",
+      "alt": "Side profile of a Lexus IS 250C convertible with the roof down"
+    },
+    {
+      "id": 3,
+      "title": "Lexus IS 250C Rear View",
+      "image": "https://pyu0cnhpfktnlqct.public.blob.vercel-storage.com/donker-vnSZB6Jc1FBxxtafHw0U1qJwyhv0VM.jpg",
+      "alt": "Rear view of a Lexus IS 250C convertible showing taillights and trunk"
+    },
+    {
+      "id": 4,
+      "title": "Lexus IS 250C Interior",
+      "image": "https://pyu0cnhpfktnlqct.public.blob.vercel-storage.com/5-qGm9sJTB8gnpL53aqq6ykpmseww6LD.jpg",
+      "alt": "Interior of a Lexus IS 250C convertible focusing on seats and dashboard"
+    },
+    {
+      "id": 5,
+      "title": "Lexus IS 250C Dashboard",
+      "image": "https://pyu0cnhpfktnlqct.public.blob.vercel-storage.com/2-TRLikExcw8troSVfSDleiAa2u4sxNU.jpg",
+      "alt": "Dashboard and steering wheel of a Lexus IS 250C convertible"
+    },
+    {
+      "id": 6,
+      "title": "Lexus IS 250C Wheel Detail",
+      "image": "https://pyu0cnhpfktnlqct.public.blob.vercel-storage.com/1-6wb74NbnaB2A05MkNICrrs7iBCVgEQ.jpg",
+      "alt": "interior"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "notFound": "Not Found",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "search": "Search",
+    "dashboard": "Dashboard",
+    "language": "Language"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "about": "About",
+    "photos": "Photos",
+    "search": "Search"
+  },
+  "photos": {
+    "subtitle": "Explore our collection of Lexus vehicles",
+    "footerTitle": "Your IS250C or IS300H here?",
+    "footerSubtitle": "Send an email to ",
+    "cookieConsent": {
+      "title": "Like Photos?",
+      "message": "We'd like to use cookies to remember your liked photos. No tracking, just your preferences.",
+      "allowButton": "Allow Cookies",
+      "denyButton": "No Thanks"
+    }
+  },
+  "dashboard": {
+    "subtitle": "Overview of Lexus car statistics and analytics",
+    "carStatistics": "Car Statistics",
+    "registrationData": "",
+    "lastMonths": "Last 12 months",
+    "entries": "entries",
+    "page": "Page",
+    "of": "of",
+    "monthly": "Monthly",
+    "daily": "Daily",
+    "showMonthlyData": "Show monthly data",
+    "showDailyData": "Show daily data",
+    "refreshData": "Refresh data",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "day": "Day",
+    "month": "Month",
+    "count": "Count",
+    "differences": "Differences",
+    "added": "Added",
+    "removed": "Removed",
+    "totalChanges": "Total changes",
+    "apiConnectionIssue": "API Connection Issue",
+    "retryConnection": "Retry Connection",
+    "noDataAvailable": "No data available",
+    "checkApiConnection": "Check API connection"
+  },
+  "car": {
+    "basicInformation": "Basic Information",
+    "registration": "Registration",
+    "technicalSpecs": "Technical Specs",
+    "environmental": "Environmental",
+    "licensePlate": "License Plate",
+    "brand": "Brand",
+    "model": "Model",
+    "vehicleType": "Vehicle Type",
+    "primaryColor": "Primary Color",
+    "secondaryColor": "Secondary Color",
+    "firstRegistration": "First Registration",
+    "firstRegistrationNL": "First Registration NL",
+    "insuranceStatus": "Insurance Status",
+    "apkExpiry": "APK Expiry",
+    "engineCylinders": "Engine Cylinders",
+    "engineDisplacement": "Engine Displacement",
+    "emptyWeight": "Empty Weight",
+    "maxWeight": "Max Weight",
+    "seats": "Seats",
+    "doors": "Doors",
+    "fuelType": "Fuel Type",
+    "bodyType": "Body Type",
+    "co2Emissions": "CO2 Emissions",
+    "wltpCo2": "WLTP CO2",
+    "fuelConsumption": "Fuel Consumption",
+    "energyConsumption": "Energy Consumption",
+    "electricRange": "Electric Range",
+    "emissionCode": "Emission Code",
+    "imported": "Imported",
+    "insured": "Insured",
+    "notInsured": "Not Insured",
+    "maxhp": "Max Power",
+    "maxspeed": "Max Speed"
+  },
+  "language": {
+    "english": "English",
+    "dutch": "Dutch",
+    "german": "German",
+    "french": "French"
+  },
+  "about": {
+    "title": "About LexusTracker",
+    "subtitle": "Learn about our technology, data sources, and design philosophy",
+    "technologyStack": "Technology Stack",
+    "frontend": "Frontend Technologies",
+    "features": "Features",
+    "dataSource": "Data Sources",
+    "purposeAndDesign": "Purpose & Design",
+    "whyThisDashboard": "Why This Platform?",
+    "designPhilosophy": "Design Philosophy",
+    "dashboardDescription": "LexusTracker provides comprehensive insights into Lexus IS250C vehicles in the Netherlands, helping owners and enthusiasts track vehicle statistics, registration trends, and market data through an intuitive dashboard interface.",
+    "designPhilosophyDescription": "Built with modern web technologies and responsive design principles, our platform prioritizes user experience, performance, and accessibility while providing real-time data visualization and analytics.",
+    "apiEndpoints": "API Endpoints",
+    "dataProcessing": "Data Processing",
+    "technologies": {
+      "nextjs": "Next.js 14 with App Router",
+      "react": "React 18 with TypeScript",
+      "typescript": "TypeScript",
+      "tailwind": "Tailwind CSS & Radix UI",
+      "recharts": "Recharts for Data Visualization"
+    },
+    "featuresList": {
+      "ssr": "Server-side rendering (SSR)",
+      "responsive": "Responsive design",
+      "darkMode": "Dark mode with red accents to match the IS250C",
+      "interactive": "Interactive charts and tables"
+    },
+    "apiList": {
+      "dailyMonthly": "Daily/Monthly count statistics",
+      "rdwData": "Real-time vehicle registration data",
+      "differences": "Daily differences tracking",
+      "realTime": "Real-time data updates"
+    },
+    "processingList": {
+      "colorFilter": "Color-based filtering",
+      "insurance": "Insurance status information",
+      "importExport": "Import/export tracking",
+      "search": "Search functionality"
+    }
+  },
+  "search": {
+    "title": "Search Cars",
+    "subtitle": "Search through all registered Lexus vehicles • Click on any car for detailed information",
+    "carDatabase": "Car Database",
+    "databaseSubtitle": "Real-time vehicle registration search • Click any row to view details",
+    "searchPlaceholder": "Search by license plate, brand, color...",
+    "noResults": "No results found",
+    "headers": {
+      "license": "License",
+      "model": "Model",
+      "color": "Color",
+      "insured": "Insured?",
+      "buildyear": "Buildyear"
+    },
+    "yes": "Yes",
+    "no": "No"
+  },
+  "stats": {
+    "totalCars": "Total Cars",
+    "redCars": "Red Cars",
+    "insuredCars": "Insured Cars",
+    "importedCars": "Imported Cars",
+    "updatedNow": "Updated now"
+  }
+}

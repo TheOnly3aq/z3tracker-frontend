@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square70x70logo src="/mstile-70x70.png"/>
+      <square150x150logo src="/mstile-150x150.png"/>
+      <square310x310logo src="/mstile-310x310.png"/>
+      <wide310x150logo src="/mstile-310x150.png"/>
+      <TileColor>#000000</TileColor>
+      <TileImage src="/mstile-144x144.png"/>
+    </tile>
+    <badge>
+      <polling-uri src="/api/notifications/badge"/>
+      <frequency>30</frequency>
+    </badge>
+    <notification>
+      <polling-uri src="/api/notifications/poll"/>
+      <frequency>60</frequency>
+      <cycle>1</cycle>
+    </notification>
+    <task>
+      <name>Dashboard</name>
+      <action-uri>/</action-uri>
+      <icon-uri>/favicon.ico</icon-uri>
+      <window-type>tab</window-type>
+    </task>
+    <task>
+      <name>Vehicle Search</name>
+      <action-uri>/search</action-uri>
+      <icon-uri>/favicon.ico</icon-uri>
+      <window-type>tab</window-type>
+    </task>
+  </msapplication>
+</browserconfig>
