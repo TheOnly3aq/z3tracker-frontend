@@ -301,8 +301,8 @@ export default function CarDetailModal({
         <DialogHeader>
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="p-2 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-lg border border-red-500/30">
-                <Car className="w-6 h-6 text-red-400" />
+              <div className="p-2 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-lg border border-blue-500/30">
+                <Car className="w-6 h-6 text-blue-400" />
               </div>
               <div>
                 <DialogTitle className="text-2xl text-white">
@@ -320,7 +320,7 @@ export default function CarDetailModal({
                 className={`${
                   car.wam_verzekerd === "Ja"
                     ? "bg-green-500/20 text-green-400 border-green-500/30"
-                    : "bg-red-500/20 text-red-400 border-red-500/30"
+                    : "bg-blue-500/20 text-blue-400 border-blue-500/30"
                 }`}
               >
                 {car.wam_verzekerd === "Ja"
@@ -331,7 +331,7 @@ export default function CarDetailModal({
                 className="p-2 glass-effect rounded-lg border border-white/10 flex items-center justify-center transition hover:opacity-80 focus:outline-none"
                 style={{ background: "rgba(255,255,255,0.05)" }}
               >
-                <X className="w-6 h-6 text-red-400" />
+                <X className="w-6 h-6 text-blue-400" />
                 <span className="sr-only">Close</span>
               </DialogPrimitive.Close>
             </div>

@@ -5,6 +5,10 @@ import StatsCards from "@/components/stats-cards";
 import { useLanguage } from "@/lib/i18n";
 import { useEffect } from "react";
 
+/**
+ * Dashboard component displaying vehicle statistics and analytics
+ * @returns {JSX.Element} The dashboard page component
+ */
 export default function Dashboard() {
   const { t } = useLanguage();
 
@@ -61,7 +65,6 @@ export default function Dashboard() {
     document.head.appendChild(breadcrumbScript);
 
     return () => {
-      // Cleanup
       document.head.removeChild(breadcrumbScript);
     };
   }, []);

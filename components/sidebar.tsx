@@ -54,8 +54,8 @@ export default function Sidebar() {
                 </button>
               )}
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-br ml-4 from-red-500 to-red-600 rounded-lg flex items-center justify-center">
-                  <div className="bg-red-700 rounded-sm p-1 flex items-center justify-center w-8 h-8">
+                <div className="w-8 h-8 bg-gradient-to-br ml-4 from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                  <div className="bg-blue-700 rounded-sm p-1 flex items-center justify-center w-8 h-8">
                     <svg
                       fill="#fff"
                       viewBox="0 0 612 612"
@@ -91,7 +91,7 @@ export default function Sidebar() {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`group flex items-center px-4 py-3 text-sm font-medium rounded-xl transition-all duration-300 hover-lift ${
                       isActive
-                        ? "bg-gradient-to-r from-red-500/20 to-red-600/20 text-white border border-red-500/30 glow-red"
+                        ? "bg-gradient-to-r from-blue-500/20 to-blue-600/20 text-white border border-blue-500/30 glow-red"
                         : "text-gray-300 hover:bg-white/5 hover:text-white"
                     }`}
                     style={{ animationDelay: `${index * 100}ms` }}
@@ -99,13 +99,13 @@ export default function Sidebar() {
                     <item.icon
                       className={`w-5 h-5 mr-3 transition-colors ${
                         isActive
-                          ? "text-red-400"
+                          ? "text-blue-400"
                           : "text-gray-400 group-hover:text-white"
                       }`}
                     />
                     {t(item.name)}
                     {isActive && (
-                      <div className="ml-auto w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+                      <div className="ml-auto w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
                     )}
                   </LocalizedLink>
                 );

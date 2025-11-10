@@ -6,15 +6,17 @@ import { useLanguage } from "@/lib/i18n";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
+/**
+ * About page component displaying technology stack and platform information
+ * @returns {JSX.Element} The about page component
+ */
 export default function About() {
   const { t } = useLanguage();
 
-  // Set page metadata dynamically for client component
   useEffect(() => {
     document.title =
       "About BMWTracker - Technology, Mission & Platform Details | Netherlands";
 
-    // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
@@ -23,7 +25,6 @@ export default function About() {
       );
     }
 
-    // Add page-specific keywords
     const metaKeywords = document.querySelector('meta[name="keywords"]');
     if (metaKeywords) {
       const currentKeywords = metaKeywords.getAttribute("content") || "";
@@ -35,7 +36,6 @@ export default function About() {
       );
     }
 
-    // Add canonical URL
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement("link");
@@ -44,7 +44,6 @@ export default function About() {
     }
     canonical.setAttribute("href", "https://BMWtracker.com/about");
 
-    // Add organization structured data
     const orgScript = document.createElement("script");
     orgScript.type = "application/ld+json";
     orgScript.textContent = JSON.stringify({
@@ -89,7 +88,7 @@ export default function About() {
       <div className="space-y-8">
         <header className="ml-12 lg:ml-0">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent mb-2 flex items-center gap-3">
-            <Info className="w-8 h-8 text-red-500" />
+            <Info className="w-8 h-8 text-blue-500" />
             {t("about.title")}
           </h1>
           <p className="text-gray-400 text-lg">{t("about.subtitle")}</p>
@@ -128,19 +127,19 @@ export default function About() {
                   </h3>
                   <ul className="text-gray-300 space-y-2">
                     <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                       {t("about.technologies.nextjs")}
                     </li>
                     <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                       {t("about.technologies.react")}
                     </li>
                     <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                       {t("about.technologies.tailwind")}
                     </li>
                     <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                       {t("about.technologies.recharts")}
                     </li>
                   </ul>
@@ -163,7 +162,7 @@ export default function About() {
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <motion.div
-                    className="p-2 bg-gradient-to-br rounded-lg border from-red-500/20 to-red-600/20 border-red-500/30 text-red-400"
+                    className="p-2 bg-gradient-to-br rounded-lg border from-blue-500/20 to-blue-600/20 border-blue-500/30 text-blue-400"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     transition={{ duration: 0.2 }}
                   >
@@ -181,19 +180,19 @@ export default function About() {
                   </h3>
                   <ul className="text-gray-300 space-y-2">
                     <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                       {t("about.apiList.rdwData")}
                     </li>
                     <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                       {t("about.processingList.insurance")}
                     </li>
                     <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                       {t("about.apiList.realTime")}
                     </li>
                     <li className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                       {t("about.processingList.importExport")}
                     </li>
                   </ul>

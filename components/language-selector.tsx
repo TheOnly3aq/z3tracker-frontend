@@ -10,10 +10,13 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 
+/**
+ * Language selector component for switching between languages
+ * @returns {JSX.Element} The language selector component
+ */
 export default function LanguageSelector() {
   const { locale, setLocale, t } = useLanguage();
 
-  // Get the current country code based on locale
   const getCurrentCountryCode = () => {
     return locale === "en" ? "GB" : "NL";
   };
@@ -47,7 +50,7 @@ export default function LanguageSelector() {
           onClick={() => setLocale("nl")}
           className={`cursor-pointer ${
             locale === "nl"
-              ? "bg-red-500/20 text-white"
+              ? "bg-blue-500/20 text-white"
               : "text-gray-300 hover:text-white"
           }`}
         >
@@ -68,7 +71,7 @@ export default function LanguageSelector() {
           onClick={() => setLocale("en")}
           className={`cursor-pointer ${
             locale === "en"
-              ? "bg-red-500/20 text-white"
+              ? "bg-blue-500/20 text-white"
               : "text-gray-300 hover:text-white"
           }`}
         >

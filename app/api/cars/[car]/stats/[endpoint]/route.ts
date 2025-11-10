@@ -11,7 +11,6 @@ export async function GET(
     req: Request,
     {params}: { params: { car: string; endpoint: string } }
 ) {
-    // Prevent Next.js from caching this route (responses over 2MB can't be cached)
     noStore();
     
     try {
@@ -63,7 +62,7 @@ export async function GET(
                 "Content-Type": "application/json",
                 "x-api-key": expectedKey,
             },
-            cache: "no-store", // Disable caching for large responses
+            cache: "no-store",
         });
 
         const contentType = upstream.headers.get("content-type") || "";
@@ -71,7 +70,6 @@ export async function GET(
             ? await upstream.json()
             : await upstream.text();
 
-        // Disable caching for large responses (over 2MB)
         const noCacheHeaders = {
             "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
             "Pragma": "no-cache",

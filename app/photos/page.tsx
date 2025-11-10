@@ -104,7 +104,7 @@ export default function Photos() {
     <div className="space-y-8">
       <div className="ml-12 lg:ml-0 ">
         <h1 className="text-4xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent mb-2 flex items-center gap-3">
-          <Camera className="w-8 h-8 text-red-500" />
+          <Camera className="w-8 h-8 text-blue-500" />
           {t("navigation.photos")}
         </h1>
         <div className="flex items-center justify-between">
@@ -120,7 +120,7 @@ export default function Photos() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <Loader2 className="w-8 h-8 animate-spin text-red-500 mb-4" />
+          <Loader2 className="w-8 h-8 animate-spin text-blue-500 mb-4" />
           <p className="text-gray-400 text-lg">Loading photos...</p>
         </motion.div>
       )}
@@ -133,11 +133,11 @@ export default function Photos() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <AlertCircle className="w-8 h-8 text-red-500 mb-4" />
+          <AlertCircle className="w-8 h-8 text-blue-500 mb-4" />
           <p className="text-gray-400 text-lg mb-4">Failed to load photos</p>
           <button
             onClick={refetch}
-            className="flex items-center gap-2 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors duration-200"
+            className="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors duration-200"
           >
             <RefreshCw className="w-4 h-4" />
             Try Again
@@ -241,8 +241,8 @@ export default function Photos() {
                       <Heart
                         className={`w-4 h-4 transition-colors duration-200 ${
                           likedPhotos.has(photo.id)
-                            ? "text-red-500 fill-red-500"
-                            : "text-red-400 hover:text-red-300"
+                            ? "text-blue-500 fill-blue-500"
+                            : "text-blue-400 hover:text-blue-300"
                         }`}
                       />
                     </motion.div>
@@ -267,7 +267,7 @@ export default function Photos() {
           {t("photos.footerSubtitle")}
           <a
             href="mailto:info@BMWtracker.nl"
-            className="text-red-400 hover:text-red-300 transition-colors duration-200"
+            className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
           >
             info@BMWtracker.nl
           </a>

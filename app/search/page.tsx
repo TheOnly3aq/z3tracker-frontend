@@ -43,6 +43,10 @@ interface CarData {
     [key: string]: any;
 }
 
+/**
+ * Search component for finding and displaying BMW Z3 vehicles
+ * @returns {JSX.Element} The search page component
+ */
 export default function Search() {
     const {t} = useLanguage();
     const [cars, setCars] = useState<CarData[]>([]);
@@ -54,7 +58,6 @@ export default function Search() {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 20;
 
-    // Memoize filtered cars to prevent unnecessary re-renders
     const filteredCars = useMemo(() => {
         if (!searchTerm) return cars;
 
@@ -65,7 +68,6 @@ export default function Search() {
         );
     }, [searchTerm, cars]);
 
-    // Keep pagination in range and reset to page 1 when search changes
     useEffect(() => {
         setCurrentPage(1);
     }, [searchTerm]);
@@ -108,7 +110,6 @@ export default function Search() {
             );
         }
 
-        // Add page-specific keywords
         const metaKeywords = document.querySelector('meta[name="keywords"]');
         if (metaKeywords) {
             const currentKeywords = metaKeywords.getAttribute("content") || "";
@@ -120,7 +121,6 @@ export default function Search() {
             );
         }
 
-        // Add canonical URL
         let canonical = document.querySelector('link[rel="canonical"]');
         if (!canonical) {
             canonical = document.createElement("link");
@@ -129,7 +129,6 @@ export default function Search() {
         }
         canonical.setAttribute("href", "https://BMWtracker.nl/search");
 
-        // Add search action structured data
         const searchScript = document.createElement("script");
         searchScript.type = "application/ld+json";
         searchScript.textContent = JSON.stringify({
@@ -190,7 +189,7 @@ export default function Search() {
         <div className="space-y-8">
             <div className="ml-12 lg:ml-0">
                 <h1 className="text-4xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent mb-2 flex items-center gap-3">
-                    <SearchIcon className="w-8 h-8 text-red-500"/>
+                    <SearchIcon className="w-8 h-8 text-blue-500"/>
                     {t("search.title")}
                 </h1>
                 <p className="text-gray-400 text-lg">{t("search.subtitle")}</p>
@@ -200,8 +199,8 @@ export default function Search() {
                 <CardHeader className="pb-4">
                     <div className="flex items-center space-x-3 mb-4">
                         <div
-                            className="p-2 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-lg border border-red-500/30">
-                            <Database className="w-5 h-5 text-red-400"/>
+                            className="p-2 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-lg border border-blue-500/30">
+                            <Database className="w-5 h-5 text-blue-400"/>
                         </div>
                         <div className="min-w-0 flex-1">
                             <CardTitle className="text-white text-lg sm:text-xl">
@@ -217,7 +216,7 @@ export default function Search() {
                             placeholder={t("search.searchPlaceholder")}
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
-                            className="glass-effect border-white/10 text-white placeholder-gray-400 focus:border-red-500/50 transition-all text-sm sm:text-base"
+                            className="glass-effect border-white/10 text-white placeholder-gray-400 focus:border-blue-500/50 transition-all text-sm sm:text-base"
                         />
                     </div>
                 </CardHeader>
@@ -225,9 +224,9 @@ export default function Search() {
                     {loading ? (
                         <div className="flex items-center justify-center h-64">
                             <div className="relative">
-                                <div className="animate-spin rounded-full h-12 w-12 border-2 border-red-500/30"></div>
+                                <div className="animate-spin rounded-full h-12 w-12 border-2 border-blue-500/30"></div>
                                 <div
-                                    className="animate-spin rounded-full h-12 w-12 border-2 border-red-500 border-t-transparent absolute top-0"></div>
+                                    className="animate-spin rounded-full h-12 w-12 border-2 border-blue-500 border-t-transparent absolute top-0"></div>
                             </div>
                         </div>
                     ) : (
@@ -275,7 +274,7 @@ export default function Search() {
                                                         onClick={() => handleCarClick(car)}
                                                     >
                                                         <TableCell
-                                                            className="text-white font-mono font-semibold group-hover:text-red-400 transition-colors text-xs sm:text-sm px-3 sm:px-4">
+                                                            className="text-white font-mono font-semibold group-hover:text-blue-400 transition-colors text-xs sm:text-sm px-3 sm:px-4">
                                                             {formattedLicensePlate}
                                                         </TableCell>
                                                         <TableCell
@@ -291,7 +290,7 @@ export default function Search() {
                                   className={`px-2 py-1 rounded-full text-xs font-medium transition-all duration-200 ${
                                       car.wam_verzekerd === "Ja"
                                           ? "bg-green-500/20 text-green-400 border border-green-500/30"
-                                          : "bg-red-500/20 text-red-400 border border-red-500/30"
+                                          : "bg-blue-500/20 text-blue-400 border border-blue-500/30"
                                   }`}
                               >
                                 {car.wam_verzekerd === "Ja"

@@ -9,23 +9,23 @@
   --card-foreground: 0 0% 98%;
   --popover: 0 0% 3.9%;
   --popover-foreground: 0 0% 98%;
-  --primary: 0 0% 98%;
-  --primary-foreground: 0 0% 9%;
-  --secondary: 0 0% 14.9%;
+  --primary: 206 99% 35%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 44%;
   --secondary-foreground: 0 0% 98%;
   --muted: 0 0% 14.9%;
   --muted-foreground: 0 0% 63.9%;
-  --accent: 0 0% 14.9%;
+  --accent: 0 0% 44%;
   --accent-foreground: 0 0% 98%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
   --border: 0 0% 14.9%;
   --input: 0 0% 14.9%;
-  --ring: 0 0% 83.1%;
-  --chart-1: 0 72% 51%;
-  --chart-2: 0 0% 63.9%;
+  --ring: 206 99% 40%;
+  --chart-1: 206 99% 40%;
+  --chart-2: 0 0% 44%;
   --chart-3: 0 0% 83.1%;
-  --chart-4: 0 72% 41%;
+  --chart-4: 206 99% 35%;
   --chart-5: 0 62.8% 30.6%;
   --radius: 0.75rem;
 }
@@ -51,10 +51,9 @@ body {
 }
 
 .glow-red {
-  box-shadow: 0 0 20px rgba(239, 68, 68, 0.1);
+  box-shadow: 0 0 20px rgba(1, 102, 177, 0.1);
 }
 
-/* Smooth animations with hardware acceleration */
 .animate-fade-in {
   animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   transform: translate3d(0, 0, 0);
@@ -124,12 +123,10 @@ body {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  /* Force hardware acceleration for better blur performance */
   transform: translateZ(0);
   will-change: backdrop-filter;
 }
 
-/* Smooth table animations */
 .table-row-enter {
   animation: tableRowEnter 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   transform: translate3d(0, 0, 0);
@@ -146,12 +143,10 @@ body {
   }
 }
 
-/* Prevent layout shifts */
 .prevent-shift {
   contain: layout style paint;
 }
 
-/* Mobile-first responsive improvements */
 @media (max-width: 640px) {
   .gradient-bg {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
@@ -168,7 +163,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
 
-  /* Reduce animation intensity on mobile */
   .animate-slide-up {
     animation: slideUpMobile 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
@@ -185,7 +179,6 @@ body {
   }
 }
 
-/* Improve touch targets on mobile */
 @media (max-width: 768px) {
   button,
   .cursor-pointer {
@@ -193,17 +186,14 @@ body {
     min-width: 44px;
   }
 
-  /* Better spacing for mobile cards */
   .card-gradient {
     margin-bottom: 1rem;
   }
 
-  /* Optimize table for mobile */
   .table-responsive {
     font-size: 0.875rem;
   }
 
-  /* Better mobile sidebar */
   .glass-effect {
   background: rgba(10, 10, 10, 0.3);
   -webkit-backdrop-filter: blur(20px);
@@ -212,7 +202,6 @@ body {
   }
 }
 
-/* Tablet improvements */
 @media (min-width: 641px) and (max-width: 1024px) {
   .hover-lift:hover {
     transform: translate3d(0, -3px, 0);

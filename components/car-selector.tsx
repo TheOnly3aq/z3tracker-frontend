@@ -54,7 +54,7 @@ export default function CarSelector() {
           style={{ outline: "none", boxShadow: "none" }}
         >
           {mounted ? (
-            <selectedOption.icon className="w-4 h-4 text-red-400" />
+            <selectedOption.icon className="w-4 h-4 text-blue-400" />
           ) : (
             <Car className="w-4 h-4 text-gray-400" />
           )}
@@ -70,12 +70,12 @@ export default function CarSelector() {
             onClick={() => handleSelect(car.id)}
             className={`cursor-pointer ${
               selectedCar === car.id
-                ? "bg-red-500/20 text-white"
+                ? "bg-blue-500/20 text-white"
                 : "text-gray-300 hover:text-white"
             }`}
           >
             <div className="flex items-center gap-2">
-              <car.icon className="w-4 h-4 text-red-400" />
+              <car.icon className="w-4 h-4 text-blue-400" />
               {car.label}
             </div>
           </DropdownMenuItem>

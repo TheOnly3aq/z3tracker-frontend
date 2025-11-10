@@ -3,13 +3,11 @@ import { prisma } from "@/lib/prisma";
 
 export async function GET(request: NextRequest) {
   try {
-    // Check if we're in build mode or if database is not available
     if (process.env.NODE_ENV === "production" && !process.env.DATABASE_URL) {
       console.warn("Database URL not available during build");
       return NextResponse.json([]);
     }
 
-    // Fetch all active photos ordered by the 'order' field
     const photos = await prisma.photo.findMany({
       where: {
         active: true,
@@ -33,7 +31,6 @@ export async function GET(request: NextRequest) {
   } catch (error) {
     console.error("Error fetching photos:", error);
 
-    // During build time, return empty array instead of error
     if (process.env.NODE_ENV === "production") {
       return NextResponse.json([]);
     }

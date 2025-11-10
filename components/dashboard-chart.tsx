@@ -329,7 +329,7 @@ export default function DashboardChart() {
                         {dataSource === "daily" ? t("dashboard.day") : t("dashboard.month")}
                         : {label}
                     </h1>
-                    <p className="text-red-400 font-semibold text-sm mb-1">
+                    <p className="text-blue-400 font-semibold text-sm mb-1">
                         {t("dashboard.count")}: {payload[0].value}
                     </p>
                     {differences && differences.totalChanges > 0 && (
@@ -361,8 +361,8 @@ export default function DashboardChart() {
                 <div className="space-y-4">
                     <div className="flex items-start space-x-3">
                         <div
-                            className="p-2 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-lg border border-red-500/30 flex-shrink-0">
-                            <TrendingUp className="w-5 h-5 text-red-400"/>
+                            className="p-2 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-lg border border-blue-500/30 flex-shrink-0">
+                            <TrendingUp className="w-5 h-5 text-blue-400"/>
                         </div>
                         <div className="min-w-0 flex-1">
                             <CardTitle className="text-white text-lg sm:text-xl">
@@ -392,7 +392,7 @@ export default function DashboardChart() {
                                         <select
                                             value={dataSource}
                                             onChange={e => setDataSource(e.target.value as DataSource)}
-                                            className="w-full h-11 rounded-sm appearance-none bg-transparent text-gray-300 text-sm border border-white/20 pl-3 pr-8 py-2 glass-effect focus:outline-none focus:ring-2 focus:ring-red-500/40"
+                                            className="w-full h-11 rounded-sm appearance-none bg-transparent text-gray-300 text-sm border border-white/20 pl-3 pr-8 py-2 glass-effect focus:outline-none focus:ring-2 focus:ring-blue-500/40"
                                             aria-label={t("dashboard.selectDataSource")}
                                         >
                                             <option value="monthly">{t("dashboard.monthly")}</option>
@@ -418,7 +418,7 @@ export default function DashboardChart() {
                                         onClick={() => setDataSource("monthly")}
                                         className={`flex items-center justify-center px-3 py-2 glass-effect rounded-lg transition-colors text-sm ${
                                             dataSource === "monthly"
-                                                ? "bg-red-500/20 text-red-400 border border-red-500/30"
+                                                ? "bg-blue-500/20 text-blue-400 border border-blue-500/30"
                                                 : "hover:bg-white/5 text-gray-400 border border-white/10"
                                         }`}
                                         aria-pressed={dataSource === "monthly"}
@@ -430,7 +430,7 @@ export default function DashboardChart() {
                                         onClick={() => setDataSource("daily")}
                                         className={`flex items-center justify-center px-3 py-2 glass-effect rounded-lg transition-colors text-sm ${
                                             dataSource === "daily"
-                                                ? "bg-red-500/20 text-red-400 border border-red-500/30"
+                                                ? "bg-blue-500/20 text-blue-400 border border-blue-500/30"
                                                 : "hover:bg-white/5 text-gray-400 border border-white/10"
                                         }`}
                                         aria-pressed={dataSource === "daily"}
@@ -489,9 +489,9 @@ export default function DashboardChart() {
                         <div className="flex items-center justify-center h-full">
                             <div className="relative">
                                 <div
-                                    className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-2 border-red-500/30"></div>
+                                    className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-2 border-blue-500/30"></div>
                                 <div
-                                    className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-2 border-red-500 border-t-transparent absolute top-0"></div>
+                                    className="animate-spin rounded-full h-8 w-8 sm:h-12 sm:w-12 border-2 border-blue-500 border-t-transparent absolute top-0"></div>
                             </div>
                         </div>
                     ) : error ? (
@@ -506,7 +506,7 @@ export default function DashboardChart() {
                                 </p>
                                 <button
                                     onClick={handleRetry}
-                                    className="px-3 py-2 sm:px-4 bg-red-500/20 text-red-400 rounded-lg border border-red-500/30 hover:bg-red-500/30 transition-colors text-xs sm:text-sm"
+                                    className="px-3 py-2 sm:px-4 bg-blue-500/20 text-blue-400 rounded-lg border border-blue-500/30 hover:bg-blue-500/30 transition-colors text-xs sm:text-sm"
                                 >
                                     {t("dashboard.retryConnection")}
                                 </button>
@@ -542,12 +542,12 @@ export default function DashboardChart() {
                                     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
                                         <stop
                                             offset="20%"
-                                            stopColor="#5f1b1bff"
+                                            stopColor="#0166B1"
                                             stopOpacity={0.4}
                                         />
                                         <stop
                                             offset="95%"
-                                            stopColor="#757171ff"
+                                            stopColor="#0166B1"
                                             stopOpacity={0.1}
                                         />
                                     </linearGradient>
@@ -559,7 +559,7 @@ export default function DashboardChart() {
                                 <Area
                                     type="monotone"
                                     dataKey="count"
-                                    stroke="#9d0100"
+                                    stroke="#0166B1"
                                     fill="url(#colorUv)"
                                 />
                             </AreaChart>
