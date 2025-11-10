@@ -96,7 +96,7 @@ export default function Sidebar() {
             <div className="px-4 pb-4 border-t border-white/10">
               <div className="flex items-center gap-1">
                 <LanguageSelector />
-                <span className="text-xs text-gray-500">V2.3 • Made by KT</span>
+                <span className="text-xs text-gray-500">V1.0 • Made by KT</span>
               </div>
             </div>
           </div>
