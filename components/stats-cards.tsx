@@ -4,7 +4,6 @@ import {useState, useEffect} from "react"
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card"
 import {Car, Palette, Shield, Import, TrendingUp} from "lucide-react"
 import {useLanguage} from "@/lib/i18n";
-import Cookies from "js-cookie";
 
 interface CarData {
     eerste_kleur: string
@@ -22,7 +21,7 @@ export default function StatsCards() {
         imported: 0,
     });
     const [loading, setLoading] = useState(true);
-    const selectedCar = Cookies.get("selectedCar") || "is250c";
+    const selectedCar = "Z3";
     const url = `/api/cars/${selectedCar}/stats/rdw-data`;
 
     useEffect(() => {
@@ -60,7 +59,7 @@ export default function StatsCards() {
         };
 
         fetchCars();
-    }, []);
+    }, [url]);
 
     const cards = [
         {

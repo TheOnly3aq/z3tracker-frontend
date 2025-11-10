@@ -1,7 +1,7 @@
 {
-  "name": "LexusTracker - Lexus IS250C Voertuig Tracking Platform",
-  "short_name": "LexusTracker",
-  "description": "Geavanceerde RDW Data - Uitgebreide inzichten in Lexus IS250C voertuigen in Nederland met officiële RDW gegevens",
+  "name": "BMWTracker - BMW Z3 Voertuig Tracking Platform",
+  "short_name": "BMWTracker",
+  "description": "Geavanceerde RDW Data - Uitgebreide inzichten in BMW Z3 voertuigen in Nederland met officiële RDW gegevens",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
@@ -19,7 +19,7 @@
   },
   "protocol_handlers": [
     {
-      "protocol": "web+lexustracker",
+      "protocol": "web+BMWtracker",
       "url": "/search?kenteken=%s"
     }
   ],
@@ -41,7 +41,7 @@
     {
       "name": "Voertuig Zoeken | Vehicle Search",
       "short_name": "Zoeken | Search",
-      "description": "Zoek door uitgebreide Lexus IS250C database | Search comprehensive Lexus IS250C database",
+      "description": "Zoek door uitgebreide BMW Z3 database | Search comprehensive BMW Z3 database",
       "url": "/search",
       "icons": [
         {
@@ -81,7 +81,7 @@
     {
       "name": "Foto Gallerij | Photo Gallery",
       "short_name": "Foto's | Photos",
-      "description": "Bekijk Lexus IS250C foto gallerij | Browse Lexus IS250C photo gallery",
+      "description": "Bekijk BMW Z3 foto gallerij | Browse BMW Z3 photo gallery",
       "url": "/photos",
       "icons": [
         {
@@ -101,7 +101,7 @@
     {
       "name": "Over Platform | About Platform",
       "short_name": "Over | About",
-      "description": "Leer over LexusTracker technologie | Learn about LexusTracker technology",
+      "description": "Leer over BMWTracker technologie | Learn about BMWTracker technology",
       "url": "/about",
       "icons": [
         {

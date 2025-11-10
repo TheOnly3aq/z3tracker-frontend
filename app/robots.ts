@@ -71,9 +71,9 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: [
-      "https://lexustracker.nl/sitemap.xml",
-      "https://lexustracker.nl/sitemap-images.xml",
+      "https://BMWtracker.nl/sitemap.xml",
+      "https://BMWtracker.nl/sitemap-images.xml",
     ],
-    host: "https://lexustracker.nl",
+    host: "https://BMWtracker.nl",
   };
 }

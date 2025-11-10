@@ -15,8 +15,6 @@ import {SearchIcon, Database} from "lucide-react";
 import CarDetailModal from "@/components/car-detail-modal";
 import {KentekenCheck} from "rdw-kenteken-check";
 import {useLanguage} from "@/lib/i18n";
-import Cookies from "js-cookie";
-import CarSelector from "@/components/car-selector";
 
 interface CarData {
     kenteken: string;
@@ -52,7 +50,7 @@ export default function Search() {
     const [loading, setLoading] = useState(true);
     const [selectedCar, setSelectedCar] = useState<CarData | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const selectedCarFromStorage = Cookies.get("selectedCar") || "is250c";
+    const selectedCarFromStorage = "Z3";
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 20;
 
@@ -100,13 +98,13 @@ export default function Search() {
         fetchCars();
 
         document.title =
-            "Vehicle Search - Find Any Lexus IS250C in Netherlands Database | LexusTracker";
+            "Vehicle Search - Find Any BMW Z3 in Netherlands Database | BMWTracker";
 
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
             metaDescription.setAttribute(
                 "content",
-                "Search through comprehensive Lexus IS250C database using official RDW data. Find vehicle registration details, insurance status, specifications, and complete history instantly."
+                "Search through comprehensive BMW Z3 database using official RDW data. Find vehicle registration details, insurance status, specifications, and complete history instantly."
             );
         }
 
@@ -115,7 +113,7 @@ export default function Search() {
         if (metaKeywords) {
             const currentKeywords = metaKeywords.getAttribute("content") || "";
             const additionalKeywords =
-                ", Lexus vehicle search, RDW database lookup, vehicle registration search, Lexus IS250C finder, Netherlands car database, license plate lookup, Lexus voertuig zoeken, RDW database opzoeken, voertuigregistratie zoeken, Lexus IS250C vinder, Nederland auto database, kenteken opzoeken, auto zoeken Nederland, voertuiggegevens zoeken, auto database zoeken, voertuig geschiedenis zoeken, kenteken check, auto informatie zoeken, voertuig opzoeken Nederland, Nederlandse auto zoeken, RDW kenteken opzoeken, auto registratie zoeken, voertuig database Nederland, auto gegevens opzoeken, RDW gegevens zoeken";
+                ", BMW vehicle search, RDW database lookup, vehicle registration search, BMW Z3 finder, Netherlands car database, license plate lookup, BMW voertuig zoeken, RDW database opzoeken, voertuigregistratie zoeken, BMW Z3 vinder, Nederland auto database, kenteken opzoeken, auto zoeken Nederland, voertuiggegevens zoeken, auto database zoeken, voertuig geschiedenis zoeken, kenteken check, auto informatie zoeken, voertuig opzoeken Nederland, Nederlandse auto zoeken, RDW kenteken opzoeken, auto registratie zoeken, voertuig database Nederland, auto gegevens opzoeken, RDW gegevens zoeken";
             metaKeywords.setAttribute(
                 "content",
                 currentKeywords + additionalKeywords
@@ -129,7 +127,7 @@ export default function Search() {
             canonical.setAttribute("rel", "canonical");
             document.head.appendChild(canonical);
         }
-        canonical.setAttribute("href", "https://lexustracker.nl/search");
+        canonical.setAttribute("href", "https://BMWtracker.nl/search");
 
         // Add search action structured data
         const searchScript = document.createElement("script");
@@ -138,26 +136,26 @@ export default function Search() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             name: "Vehicle Search",
-            description: "Search Lexus IS250C database using official RDW data",
-            url: "https://lexustracker.nl/search",
+            description: "Search BMW Z3 database using official RDW data",
+            url: "https://BMWtracker.nl/search",
             potentialAction: {
                 "@type": "SearchAction",
                 target: {
                     "@type": "EntryPoint",
-                    urlTemplate: "https://lexustracker.nl/search?q={search_term_string}",
+                    urlTemplate: "https://BMWtracker.nl/search?q={search_term_string}",
                 },
                 "query-input": "required name=search_term_string",
             },
             mainEntity: {
                 "@type": "Dataset",
-                name: "Lexus IS250C Vehicle Database",
+                name: "BMW Z3 Vehicle Database",
                 description:
-                    "Comprehensive database of Lexus IS250C vehicles in the Netherlands",
-                url: "https://lexustracker.nl/search",
+                    "Comprehensive database of BMW Z3 vehicles in the Netherlands",
+                url: "https://BMWtracker.nl/search",
                 provider: {
                     "@type": "Organization",
-                    name: "LexusTracker",
-                    url: "https://lexustracker.nl",
+                    name: "BMWTracker",
+                    url: "https://BMWtracker.nl",
                 },
             },
         });
@@ -168,7 +166,7 @@ export default function Search() {
                 document.head.removeChild(searchScript);
             }
         };
-    }, []);
+    }, [url]);
 
     const handleCarClick = (car: CarData) => {
         setSelectedCar(car);
@@ -215,7 +213,6 @@ export default function Search() {
                         </div>
                     </div>
                     <div className="relative flex gap-2">
-                        <CarSelector/>
                         <Input
                             placeholder={t("search.searchPlaceholder")}
                             value={searchTerm}

@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": " next build",
+    "build": "prisma generate && next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "prisma generate",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -39,6 +44,7 @@
     "@radix-ui/react-toggle-group": "1.1.1",
     "@radix-ui/react-tooltip": "1.1.6",
     "@sentry/nextjs": "^10.5.0",
+    "@prisma/client": "^5.22.0",
     "@types/js-cookie": "^3.0.6",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
@@ -57,6 +63,7 @@
     "motion": "^12.23.12",
     "next": "14.2.16",
     "next-themes": "^0.4.4",
+    "prisma": "^5.22.0",
     "rdw-kenteken-check": "^1.0.29",
     "react": "^18",
     "react-country-flag": "^3.1.0",

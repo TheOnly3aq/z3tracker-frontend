@@ -17,8 +17,8 @@
     "search": "Search"
   },
   "photos": {
-    "subtitle": "Explore our collection of Lexus vehicles",
-    "footerTitle": "Your IS250C or IS300H here?",
+    "subtitle": "Explore our collection of BMW vehicles",
+    "footerTitle": "Your Z3 or IS300H here?",
     "footerSubtitle": "Send an email to ",
     "cookieConsent": {
       "title": "Like Photos?",
@@ -28,7 +28,7 @@
     }
   },
   "dashboard": {
-    "subtitle": "Overview of Lexus car statistics and analytics",
+    "subtitle": "Overview of BMW car statistics and analytics",
     "carStatistics": "Car Statistics",
     "registrationData": "",
     "lastMonths": "Last 12 months",
@@ -96,7 +96,7 @@
     "french": "French"
   },
   "about": {
-    "title": "About LexusTracker",
+    "title": "About BMWTracker",
     "subtitle": "Learn about our technology, data sources, and design philosophy",
     "technologyStack": "Technology Stack",
     "frontend": "Frontend Technologies",
@@ -105,7 +105,7 @@
     "purposeAndDesign": "Purpose & Design",
     "whyThisDashboard": "Why This Platform?",
     "designPhilosophy": "Design Philosophy",
-    "dashboardDescription": "LexusTracker provides comprehensive insights into Lexus IS250C vehicles in the Netherlands, helping owners and enthusiasts track vehicle statistics, registration trends, and market data through an intuitive dashboard interface.",
+    "dashboardDescription": "BMWTracker provides comprehensive insights into BMW Z3 vehicles in the Netherlands, helping owners and enthusiasts track vehicle statistics, registration trends, and market data through an intuitive dashboard interface.",
     "designPhilosophyDescription": "Built with modern web technologies and responsive design principles, our platform prioritizes user experience, performance, and accessibility while providing real-time data visualization and analytics.",
     "apiEndpoints": "API Endpoints",
     "dataProcessing": "Data Processing",
@@ -119,7 +119,7 @@
     "featuresList": {
       "ssr": "Server-side rendering (SSR)",
       "responsive": "Responsive design",
-      "darkMode": "Dark mode with red accents to match the IS250C",
+      "darkMode": "Dark mode with red accents to match the Z3",
       "interactive": "Interactive charts and tables"
     },
     "apiList": {
@@ -137,7 +137,7 @@
   },
   "search": {
     "title": "Search Cars",
-    "subtitle": "Search through all registered Lexus vehicles • Click on any car for detailed information",
+    "subtitle": "Search through all registered BMW vehicles • Click on any car for detailed information",
     "carDatabase": "Car Database",
     "databaseSubtitle": "Real-time vehicle registration search • Click any row to view details",
     "searchPlaceholder": "Search by license plate, brand, color...",

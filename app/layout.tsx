@@ -35,10 +35,10 @@ export default function RootLayout({ children }: Props) {
   const webAppLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: "LexusTracker",
-    url: "https://lexustracker.nl",
+    name: "BMWTracker",
+    url: "https://BMWtracker.nl",
     description:
-      "Geavanceerde RDW Data - Uitgebreide inzichten in Lexus IS250C voertuigen in Nederland met officiële RDW gegevens",
+      "Geavanceerde RDW Data - Uitgebreide inzichten in BMW Z3 voertuigen in Nederland met officiële RDW gegevens",
     applicationCategory: "Automotive",
     operatingSystem: "Web",
     browserRequirements: "Moderne browser met JavaScript ingeschakeld",
@@ -61,14 +61,14 @@ export default function RootLayout({ children }: Props) {
       "Responsief ontwerp",
       "Datavisualisatie",
     ],
-    downloadUrl: "https://lexustracker.nl",
+    downloadUrl: "https://BMWtracker.nl",
     author: {
       "@type": "Organization",
-      name: "LexusTracker",
-      url: "https://lexustracker.nl",
+      name: "BMWTracker",
+      url: "https://BMWtracker.nl",
       logo: {
         "@type": "ImageObject",
-        url: "https://lexustracker.nl/logo.png",
+        url: "https://BMWtracker.nl/logo.png",
         width: 512,
         height: 512,
       },
@@ -80,24 +80,24 @@ export default function RootLayout({ children }: Props) {
     },
     publisher: {
       "@type": "Organization",
-      name: "LexusTracker",
+      name: "BMWTracker",
       logo: {
         "@type": "ImageObject",
-        url: "https://lexustracker.nl/logo.png",
+        url: "https://BMWtracker.nl/logo.png",
         width: 512,
         height: 512,
       },
     },
     mainEntity: {
       "@type": "SoftwareApplication",
-      name: "LexusTracker Dashboard",
+      name: "BMWTracker Dashboard",
       applicationCategory: "Automotive Analytics",
       operatingSystem: "Webbrowser",
     },
     potentialAction: [
       {
         "@type": "ViewAction",
-        target: "https://lexustracker.nl/dashboard",
+        target: "https://BMWtracker.nl/dashboard",
         name: "Dashboard bekijken",
       },
     ],
@@ -121,7 +121,7 @@ export default function RootLayout({ children }: Props) {
           name: "Anonieme gebruiker",
         },
         reviewBody:
-          "Uitstekend platform voor het volgen van Lexus voertuiggegevens met uitgebreide inzichten.",
+          "Uitstekend platform voor het volgen van BMW voertuiggegevens met uitgebreide inzichten.",
       },
     ],
   };
@@ -129,10 +129,10 @@ export default function RootLayout({ children }: Props) {
   const orgLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "LexusTracker",
-    url: "https://lexustracker.nl",
+    name: "BMWTracker",
+    url: "https://BMWtracker.nl",
     description:
-      "Toonaangevend platform voor Lexus IS250C voertuigvolging en analyses in Nederland",
+      "Toonaangevend platform voor BMW Z3 voertuigvolging en analyses in Nederland",
     foundingDate: "2024",
     industry: "Automotieve Technologie",
     numberOfEmployees: "1-10",
@@ -141,21 +141,21 @@ export default function RootLayout({ children }: Props) {
       addressCountry: "NL",
       addressRegion: "Nederland",
     },
-    sameAs: ["https://github.com/TheOnly3aq/lexustracker"],
+    sameAs: ["https://github.com/TheOnly3aq/BMWtracker"],
   };
 
   const siteLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "LexusTracker",
-    url: "https://lexustracker.nl",
+    name: "BMWTracker",
+    url: "https://BMWtracker.nl",
     description:
-      "Uitgebreid Lexus IS250C voertuigvolgingsplatform met officiële RDW gegevens",
+      "Uitgebreid BMW Z3 voertuigvolgingsplatform met officiële RDW gegevens",
     inLanguage: ["en", "nl"],
     isPartOf: {
       "@type": "WebSite",
-      name: "LexusTracker",
-      url: "https://lexustracker.nl",
+      name: "BMWTracker",
+      url: "https://BMWtracker.nl",
     },
     mainEntity: {
       "@type": "ItemList",
@@ -164,25 +164,25 @@ export default function RootLayout({ children }: Props) {
           "@type": "SiteNavigationElement",
           position: 1,
           name: "Dashboard",
-          url: "https://lexustracker.nl/",
+          url: "https://BMWtracker.nl/",
         },
         {
           "@type": "SiteNavigationElement",
           position: 2,
           name: "Zoeken",
-          url: "https://lexustracker.nl/search",
+          url: "https://BMWtracker.nl/search",
         },
         {
           "@type": "SiteNavigationElement",
           position: 3,
           name: "Foto's",
-          url: "https://lexustracker.nl/photos",
+          url: "https://BMWtracker.nl/photos",
         },
         {
           "@type": "SiteNavigationElement",
           position: 4,
           name: "Over ons",
-          url: "https://lexustracker.nl/about",
+          url: "https://BMWtracker.nl/about",
         },
       ],
     },
@@ -191,7 +191,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>LexusTracker - Track Your Lexus IS250C with Confidence</title>
+        <title>BMWTracker - Track Your BMW Z3 with Confidence</title>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: safeJsonLd(webAppLd) }}

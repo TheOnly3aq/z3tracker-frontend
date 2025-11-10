@@ -12,14 +12,14 @@ export default function About() {
   // Set page metadata dynamically for client component
   useEffect(() => {
     document.title =
-      "About LexusTracker - Technology, Mission & Platform Details | Netherlands";
+      "About BMWTracker - Technology, Mission & Platform Details | Netherlands";
 
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Learn about LexusTracker's cutting-edge technology stack, data sources, and mission to provide comprehensive Lexus IS250C insights using official RDW data in the Netherlands."
+        "Learn about BMWTracker's cutting-edge technology stack, data sources, and mission to provide comprehensive BMW Z3 insights using official RDW data in the Netherlands."
       );
     }
 
@@ -28,7 +28,7 @@ export default function About() {
     if (metaKeywords) {
       const currentKeywords = metaKeywords.getAttribute("content") || "";
       const additionalKeywords =
-        ", LexusTracker technology, about automotive platform, RDW data integration, vehicle tracking technology, Next.js automotive app, React vehicle platform, LexusTracker technologie, over automotive platform, RDW data integratie, voertuig volgen technologie, Next.js automotive app, React voertuig platform, auto platform technologie, voertuig tracking systeem, automotive platform architectuur, voertuig data platform, auto tracking technologie, Nederlandse auto platform, voertuig informatie systeem, auto gegevens technologie, RDW integratie platform, automotive technologie Nederland, over LexusTracker, bedrijfsinformatie automotive, auto platform details, voertuig platform informatie";
+        ", BMWTracker technology, about automotive platform, RDW data integration, vehicle tracking technology, Next.js automotive app, React vehicle platform, BMWTracker technologie, over automotive platform, RDW data integratie, voertuig volgen technologie, Next.js automotive app, React voertuig platform, auto platform technologie, voertuig tracking systeem, automotive platform architectuur, voertuig data platform, auto tracking technologie, Nederlandse auto platform, voertuig informatie systeem, auto gegevens technologie, RDW integratie platform, automotive technologie Nederland, over BMWTracker, bedrijfsinformatie automotive, auto platform details, voertuig platform informatie";
       metaKeywords.setAttribute(
         "content",
         currentKeywords + additionalKeywords
@@ -42,7 +42,7 @@ export default function About() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://lexustracker.com/about");
+    canonical.setAttribute("href", "https://BMWtracker.com/about");
 
     // Add organization structured data
     const orgScript = document.createElement("script");
@@ -50,20 +50,20 @@ export default function About() {
     orgScript.textContent = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "AboutPage",
-      name: "About LexusTracker",
-      description: "Learn about LexusTracker's technology and mission",
-      url: "https://lexustracker.com/about",
+      name: "About BMWTracker",
+      description: "Learn about BMWTracker's technology and mission",
+      url: "https://BMWtracker.com/about",
       mainEntity: {
         "@type": "Organization",
-        name: "LexusTracker",
+        name: "BMWTracker",
         description:
-          "Leading platform for Lexus IS250C vehicle tracking and analytics in the Netherlands",
-        url: "https://lexustracker.com",
+          "Leading platform for BMW Z3 vehicle tracking and analytics in the Netherlands",
+        url: "https://BMWtracker.com",
         foundingDate: "2024",
         industry: "Automotive Technology",
         speciality: "Vehicle tracking and analytics",
         knowsAbout: [
-          "Lexus IS250C vehicles",
+          "BMW Z3 vehicles",
           "RDW vehicle data",
           "Automotive analytics",
           "Vehicle registration tracking",

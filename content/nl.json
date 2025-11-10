@@ -17,8 +17,8 @@
     "search": "Zoeken"
   },
   "photos": {
-    "subtitle": "Ontdek onze collectie Lexus voertuigen",
-    "footerTitle": "Jouw IS250C of IS300H hier?",
+    "subtitle": "Ontdek onze collectie BMW voertuigen",
+    "footerTitle": "Jouw Z3 of IS300H hier?",
     "footerSubtitle": "Stuur een e-mail naar ",
     "cookieConsent": {
       "title": "Foto's liken?",
@@ -28,7 +28,7 @@
     }
   },
   "dashboard": {
-    "subtitle": "Overzicht van Lexus auto statistieken en analyses",
+    "subtitle": "Overzicht van BMW auto statistieken en analyses",
     "carStatistics": "Auto Statistieken",
     "registrationData": "",
     "lastMonths": "Laatste 12 maanden",
@@ -96,7 +96,7 @@
     "french": "Frans"
   },
   "about": {
-    "title": "Over LexusTracker",
+    "title": "Over BMWTracker",
     "subtitle": "Leer over onze technologie, gegevensbronnen en ontwerpfilosofie",
     "technologyStack": "Technologie Stack",
     "frontend": "Frontend Technologieën",
@@ -105,7 +105,7 @@
     "purposeAndDesign": "Doel & Ontwerp",
     "whyThisDashboard": "Waarom dit platform?",
     "designPhilosophy": "Ontwerpfilosofie",
-    "dashboardDescription": "LexusTracker biedt uitgebreide inzichten in Lexus IS250C voertuigen in Nederland, en helpt eigenaren en liefhebbers om voertuigstatistieken, registratietrends en marktgegevens te volgen via een intuïtieve dashboard-interface.",
+    "dashboardDescription": "BMWTracker biedt uitgebreide inzichten in BMW Z3 voertuigen in Nederland, en helpt eigenaren en liefhebbers om voertuigstatistieken, registratietrends en marktgegevens te volgen via een intuïtieve dashboard-interface.",
     "designPhilosophyDescription": "Gebouwd met moderne webtechnologieën en responsieve ontwerpprincipes, geeft ons platform prioriteit aan gebruikerservaring, prestaties en toegankelijkheid terwijl het real-time datavisualisatie en analyses biedt.",
     "apiEndpoints": "API Eindpunten",
     "dataProcessing": "Gegevensverwerking",
@@ -119,7 +119,7 @@
     "featuresList": {
       "ssr": "Server-side rendering (SSR)",
       "responsive": "Responsief ontwerp",
-      "darkMode": "Donkere modus met rode accenten passend bij de IS250C",
+      "darkMode": "Donkere modus met rode accenten passend bij de Z3",
       "interactive": "Interactieve grafieken en tabellen"
     },
     "apiList": {
@@ -137,7 +137,7 @@
   },
   "search": {
     "title": "Auto's Zoeken",
-    "subtitle": "Zoek door alle geregistreerde Lexus voertuigen • Klik op elke auto voor gedetailleerde informatie",
+    "subtitle": "Zoek door alle geregistreerde BMW voertuigen • Klik op elke auto voor gedetailleerde informatie",
     "carDatabase": "Auto Database",
     "databaseSubtitle": "Real-time voertuigregistratie zoeken • Klik op een rij voor details",
     "searchPlaceholder": "Zoek op kenteken, merk, kleur...",

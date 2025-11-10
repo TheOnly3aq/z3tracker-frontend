@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const baseUrl = "https://lexustracker.nl";
+const baseUrl = "https://BMWtracker.nl";
 
 export default function sitemapImages(): MetadataRoute.Sitemap {
   return [

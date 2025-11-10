@@ -1,14 +1,19 @@
 import {NextResponse} from "next/server";
+import {unstable_noStore as noStore} from "next/cache";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 const ALLOWED_ENDPOINTS = new Set(["daily-count", "monthly-count", "daily-differences", "rdw-data"]);
-const ALLOWED_CARS = new Set(["is250c"]);
+const ALLOWED_CARS = new Set(["Z3"]);
 
 export async function GET(
     req: Request,
     {params}: { params: { car: string; endpoint: string } }
 ) {
+    // Prevent Next.js from caching this route (responses over 2MB can't be cached)
+    noStore();
+    
     try {
         const {car, endpoint} = params;
 
@@ -58,6 +63,7 @@ export async function GET(
                 "Content-Type": "application/json",
                 "x-api-key": expectedKey,
             },
+            cache: "no-store", // Disable caching for large responses
         });
 
         const contentType = upstream.headers.get("content-type") || "";
@@ -65,14 +71,27 @@ export async function GET(
             ? await upstream.json()
             : await upstream.text();
 
+        // Disable caching for large responses (over 2MB)
+        const noCacheHeaders = {
+            "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "0",
+        };
+
         if (typeof body === "string") {
             return new NextResponse(body, {
                 status: upstream.status,
-                headers: {"content-type": contentType},
+                headers: {
+                    "content-type": contentType,
+                    ...noCacheHeaders,
+                },
             });
         }
 
-        return NextResponse.json(body, {status: upstream.status});
+        return NextResponse.json(body, {
+            status: upstream.status,
+            headers: noCacheHeaders,
+        });
     } catch (err) {
         const message = err instanceof Error ? err.message : "Proxy error";
         return NextResponse.json({error: message}, {status: 502});

@@ -4,14 +4,14 @@
 <div align="center">
 
 
-# LEXUSTRACKER
+# BMWTRACKER
 
 <em>Advanced RDW Data</em>
 
 <!-- BADGES -->
-<img src="https://img.shields.io/github/last-commit/TheOnly3aq/lexustracker?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-<img src="https://img.shields.io/github/languages/top/TheOnly3aq/lexustracker?style=flat&color=0080ff" alt="repo-top-language">
-<img src="https://img.shields.io/github/languages/count/TheOnly3aq/lexustracker?style=flat&color=0080ff" alt="repo-language-count">
+<img src="https://img.shields.io/github/last-commit/TheOnly3aq/BMWtracker?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/TheOnly3aq/BMWtracker?style=flat&color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/TheOnly3aq/BMWtracker?style=flat&color=0080ff" alt="repo-language-count">
 
 <em>Built with the tools and technologies:</em>
 
@@ -44,11 +44,11 @@
 
 ## Overview
 
-LexusTracker is a powerful web application designed to monitor and provide insights into Lexus IS250C vehicles in the Netherlands, leveraging real-time data from the RDW Open Data API.
+BMWTracker is a powerful web application designed to monitor and provide insights into BMW Z3 vehicles in the Netherlands, leveraging real-time data from the RDW Open Data API.
 
-**Why LexusTracker?**
+**Why BMWTracker?**
 
-This project aims to enhance the ownership experience of Lexus IS250C vehicles by providing comprehensive insights and user-friendly features. The core features include:
+This project aims to enhance the ownership experience of BMW Z3 vehicles by providing comprehensive insights and user-friendly features. The core features include:
 
 - 🚗 **Real-time Data Access:** Seamlessly integrates with the RDW Open Data API for accurate vehicle information.
 - 🎨 **Responsive Design:** Built with React and Material-UI, ensuring a visually appealing and intuitive user experience.
@@ -70,18 +70,18 @@ This project requires the following dependencies:
 
 ### Installation
 
-Build lexustracker from the source and intsall dependencies:
+Build BMWtracker from the source and intsall dependencies:
 
 1. **Clone the repository:**
 
     ```sh
-    ❯ git clone https://github.com/TheOnly3aq/lexustracker
+    ❯ git clone https://github.com/TheOnly3aq/BMWtracker
     ```
 
 2. **Navigate to the project directory:**
 
     ```sh
-    ❯ cd lexustracker
+    ❯ cd BMWtracker
     ```
 
 3. **Install the dependencies:**
@@ -104,7 +104,7 @@ npm start
 
 ### Testing
 
-Lexustracker uses the {__test_framework__} test framework. Run the test suite with:
+BMWtracker uses the {__test_framework__} test framework. Run the test suite with:
 
 **Using [npm](https://www.npmjs.com/):**
 

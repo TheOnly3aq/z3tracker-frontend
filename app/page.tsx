@@ -9,14 +9,13 @@ export default function Dashboard() {
   const { t } = useLanguage();
 
   useEffect(() => {
-    document.title =
-      "LexusTracker - Tracking data for the Lexus IS250C| Netherlands";
+    document.title = "BMWTracker - Tracking data for the BMW Z3| Netherlands";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "The ultimate Lexus IS250C tracking platform in the Netherlands. Access real-time RDW data, vehicle statistics, registration trends, and comprehensive analytics dashboard for informed vehicle decisions."
+        "The ultimate BMW Z3 tracking platform in the Netherlands. Access real-time RDW data, vehicle statistics, registration trends, and comprehensive analytics dashboard for informed vehicle decisions."
       );
     }
 
@@ -24,7 +23,7 @@ export default function Dashboard() {
     if (metaKeywords) {
       const currentKeywords = metaKeywords.getAttribute("content") || "";
       const additionalKeywords =
-        ", Lexus IS250C dashboard, vehicle analytics Netherlands, RDW data platform, automotive insights homepage, Lexus tracking dashboard, Lexus IS250C dashboard, voertuig analytics Nederland, RDW data platform, automotive inzichten homepage, Lexus tracking dashboard, auto gegevens Nederland, voertuig statistieken, Lexus volgen, automotive dashboard Nederland, voertuig monitoring platform, auto tracking systeem, RDW gegevens dashboard, kenteken informatie, Lexus cabrio statistieken, Nederlandse auto analytics, voertuig inzichten platform, auto data visualisatie, Lexus registratie trends, voertuig database Nederland";
+        ", BMW Z3 dashboard, vehicle analytics Netherlands, RDW data platform, automotive insights homepage, BMW tracking dashboard, BMW Z3 dashboard, voertuig analytics Nederland, RDW data platform, automotive inzichten homepage, BMW tracking dashboard, auto gegevens Nederland, voertuig statistieken, BMW volgen, automotive dashboard Nederland, voertuig monitoring platform, auto tracking systeem, RDW gegevens dashboard, kenteken informatie, BMW cabrio statistieken, Nederlandse auto analytics, voertuig inzichten platform, auto data visualisatie, BMW registratie trends, voertuig database Nederland";
       metaKeywords.setAttribute(
         "content",
         currentKeywords + additionalKeywords
@@ -37,7 +36,7 @@ export default function Dashboard() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://lexustracker.nl/");
+    canonical.setAttribute("href", "https://BMWtracker.nl/");
 
     const breadcrumbScript = document.createElement("script");
     breadcrumbScript.type = "application/ld+json";
@@ -49,13 +48,13 @@ export default function Dashboard() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://lexustracker.nl/",
+          item: "https://BMWtracker.nl/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Dashboard",
-          item: "https://lexustracker.nl/",
+          item: "https://BMWtracker.nl/",
         },
       ],
     });

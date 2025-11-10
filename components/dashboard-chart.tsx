@@ -21,8 +21,6 @@ import {
     ChevronRight,
 } from "lucide-react";
 import {useLanguage} from "@/lib/i18n";
-import Cookies from "js-cookie";
-import CarSelector from "@/components/car-selector";
 
 interface ChartData {
     date: string;
@@ -49,7 +47,7 @@ export default function DashboardChart() {
     const [currentPage, setCurrentPage] = useState(0);
     const itemsPerPage = 15;
     const {t} = useLanguage();
-    const selectedCar = Cookies.get("selectedCar") || "is250c";
+    const selectedCar = "Z3";
 
     const fetchChartData = async (source: DataSource) => {
         setLoading(true);
@@ -389,9 +387,6 @@ export default function DashboardChart() {
                     <div className="flex flex-row sm:items-center sm:justify-between space-x-4">
                         <div className="flex w-full items-center justify-between">
                             <div className="flex items-center space-x-2 sm:order-1 order-1 w-full max-w-xs">
-                                {/* Mobile: styled dropdown */}
-                                <div className="sm:hidden block"><CarSelector/>
-                                </div>
                                 <div className="sm:hidden w-full">
                                     <div className="relative">
                                         <select
@@ -450,7 +445,6 @@ export default function DashboardChart() {
                             <div
                                 className="flex items-center justify-between sm:justify-end space-x-3 sm:order-2 order-2">
                                 <div className="hidden sm:flex items-center space-x-2">
-                                    <CarSelector/>
                                     <button
                                         onClick={handleRetry}
                                         className="flex h-10 items-center justify-center p-2 glass-effect rounded-sm hover:bg-white/5 transition-colors"

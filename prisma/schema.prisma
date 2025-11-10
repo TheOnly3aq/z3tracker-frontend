@@ -1,0 +1,102 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Photo {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  imageUrl    String
+  order       Int      @default(0)
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  likes       likes[]
+
+  @@map("photos")
+}
+
+model admins {
+  id         String   @id
+  email      String   @unique
+  password   String
+  name       String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime
+  ldapUser   Boolean  @default(false)
+  superadmin Boolean  @default(false)
+}
+
+model broadcast_emails {
+  id        String    @id
+  subject   String
+  content   String
+  template  String
+  sentTo    Int       @default(0)
+  sentAt    DateTime?
+  status    String    @default("draft")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime
+}
+
+model content {
+  id        String   @id
+  key       String   @unique
+  value     String
+  type      String   @default("text")
+  createdAt DateTime @default(now())
+  updatedAt DateTime
+}
+
+model likes {
+  id        String   @id
+  photoId   String
+  sessionId String
+  createdAt DateTime @default(now())
+  photos    Photo    @relation(fields: [photoId], references: [id], onDelete: Cascade)
+
+  @@unique([photoId, sessionId])
+}
+
+model newsletter_subscribers {
+  id        String   @id
+  email     String   @unique
+  name      String?
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime
+}
+
+model pricing_plans {
+  id          String   @id
+  name        String
+  description String
+  price       Float
+  currency    String   @default("EUR")
+  period      String   @default("month")
+  features    String[]
+  popular     Boolean  @default(false)
+  order       Int      @default(0)
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime
+  setupFee    Float?
+  isCustom    Boolean  @default(false)
+}
+
+model services {
+  id          String   @id
+  title       String
+  description String
+  icon        String
+  features    String[]
+  order       Int      @default(0)
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime
+}

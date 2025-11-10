@@ -1,7 +1,7 @@
 import { NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
-  const baseUrl = "https://lexustracker.nl";
+  const baseUrl = "https://BMWtracker.nl";
   const currentDate = new Date().toISOString();
 
   const rssXml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -10,41 +10,41 @@ export async function GET(request: NextRequest) {
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>LexusTracker - Lexus IS250C Insights</title>
-    <description>Latest updates and insights about Lexus IS250C vehicles in the Netherlands</description>
+    <title>BMWTracker - BMW Z3 Insights</title>
+    <description>Latest updates and insights about BMW Z3 vehicles in the Netherlands</description>
     <link>${baseUrl}</link>
     <atom:link href="${baseUrl}/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
-    <managingEditor>team@lexustracker.nl (LexusTracker Team)</managingEditor>
-    <webMaster>team@lexustracker.nl (LexusTracker Team)</webMaster>
+    <managingEditor>team@BMWtracker.nl (BMWTracker Team)</managingEditor>
+    <webMaster>team@BMWtracker.nl (BMWTracker Team)</webMaster>
     <lastBuildDate>${currentDate}</lastBuildDate>
     <pubDate>${currentDate}</pubDate>
     <ttl>60</ttl>
     <image>
       <url>${baseUrl}/logo.png</url>
-      <title>LexusTracker</title>
+      <title>BMWTracker</title>
       <link>${baseUrl}</link>
       <width>512</width>
       <height>512</height>
     </image>
     
     <item>
-      <title>LexusTracker Platform Launch</title>
-      <description>Comprehensive Lexus IS250C tracking platform now available with real-time RDW data integration</description>
+      <title>BMWTracker Platform Launch</title>
+      <description>Comprehensive BMW Z3 tracking platform now available with real-time RDW data integration</description>
       <link>${baseUrl}/about</link>
       <guid isPermaLink="true">${baseUrl}/about</guid>
       <pubDate>${currentDate}</pubDate>
-      <dc:creator>LexusTracker Team</dc:creator>
+      <dc:creator>BMWTracker Team</dc:creator>
       <category>Platform Updates</category>
     </item>
     
     <item>
       <title>Real-time Vehicle Search</title>
-      <description>Search through comprehensive Lexus IS250C database with advanced filtering options</description>
+      <description>Search through comprehensive BMW Z3 database with advanced filtering options</description>
       <link>${baseUrl}/search</link>
       <guid isPermaLink="true">${baseUrl}/search</guid>
       <pubDate>${currentDate}</pubDate>
-      <dc:creator>LexusTracker Team</dc:creator>
+      <dc:creator>BMWTracker Team</dc:creator>
       <category>Features</category>
     </item>
     
@@ -54,7 +54,7 @@ export async function GET(request: NextRequest) {
       <link>${baseUrl}/</link>
       <guid isPermaLink="true">${baseUrl}/dashboard</guid>
       <pubDate>${currentDate}</pubDate>
-      <dc:creator>LexusTracker Team</dc:creator>
+      <dc:creator>BMWTracker Team</dc:creator>
       <category>Analytics</category>
     </item>
     

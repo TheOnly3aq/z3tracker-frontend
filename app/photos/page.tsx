@@ -24,13 +24,13 @@ export default function Photos() {
         console.error("Error parsing liked photos from cookies:", error);
       }
     }
-    document.title = "LexusTracker - Photos of the Lexus IS250C | Netherlands";
+    document.title = "BMWTracker - Photos of the BMW Z3 | Netherlands";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Browse stunning Lexus IS250C photos and images. High-quality gallery showcasing exterior, interior, and detail shots of the Lexus IS250C convertible in the Netherlands."
+        "Browse stunning BMW Z3 photos and images. High-quality gallery showcasing exterior, interior, and detail shots of the BMW Z3 convertible in the Netherlands."
       );
     }
 
@@ -38,7 +38,7 @@ export default function Photos() {
     if (metaKeywords) {
       const currentKeywords = metaKeywords.getAttribute("content") || "";
       const additionalKeywords =
-        ", Lexus IS250C photos, Lexus convertible gallery, automotive photography, Lexus vehicle images, car photo gallery, Lexus IS250C foto's, Lexus cabrio gallerij, automotive fotografie, Lexus voertuig afbeeldingen, auto foto gallerij, Lexus IS250C beelden, cabrio foto's Nederland, voertuig afbeelding gallerij, Lexus IS250C plaatjes, cabrio auto foto's, Nederlandse auto foto's, Lexus beelden gallerij, voertuig fotografie, auto afbeeldingen Nederland, Lexus cabrio beelden, auto fotogallerij, voertuig plaatjes Nederland";
+        ", BMW Z3 photos, BMW convertible gallery, automotive photography, BMW vehicle images, car photo gallery, BMW Z3 foto's, BMW cabrio gallerij, automotive fotografie, BMW voertuig afbeeldingen, auto foto gallerij, BMW Z3 beelden, cabrio foto's Nederland, voertuig afbeelding gallerij, BMW Z3 plaatjes, cabrio auto foto's, Nederlandse auto foto's, BMW beelden gallerij, voertuig fotografie, auto afbeeldingen Nederland, BMW cabrio beelden, auto fotogallerij, voertuig plaatjes Nederland";
       metaKeywords.setAttribute(
         "content",
         currentKeywords + additionalKeywords
@@ -51,7 +51,7 @@ export default function Photos() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://lexustracker.nl/photos");
+    canonical.setAttribute("href", "https://BMWtracker.nl/photos");
 
     const breadcrumbScript = document.createElement("script");
     breadcrumbScript.type = "application/ld+json";
@@ -63,13 +63,13 @@ export default function Photos() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://lexustracker.nl/",
+          item: "https://BMWtracker.nl/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Photos",
-          item: "https://lexustracker.nl/photos",
+          item: "https://BMWtracker.nl/photos",
         },
       ],
     });
@@ -266,10 +266,10 @@ export default function Photos() {
         <p className="text-gray-400 text-lg">
           {t("photos.footerSubtitle")}
           <a
-            href="mailto:info@lexustracker.nl"
+            href="mailto:info@BMWtracker.nl"
             className="text-red-400 hover:text-red-300 transition-colors duration-200"
           >
-            info@lexustracker.nl
+            info@BMWtracker.nl
           </a>
         </p>
       </motion.div>
