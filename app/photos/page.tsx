@@ -24,7 +24,7 @@ export default function Photos() {
         console.error("Error parsing liked photos from cookies:", error);
       }
     }
-    document.title = "BMWTracker - Photos of the BMW Z3 | Netherlands";
+    document.title = "Z3 RADAR - Photos of the BMW Z3 | Netherlands";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -51,7 +51,7 @@ export default function Photos() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://BMWtracker.nl/photos");
+    canonical.setAttribute("href", "https://Z3radar.com/photos");
 
     const breadcrumbScript = document.createElement("script");
     breadcrumbScript.type = "application/ld+json";
@@ -63,13 +63,13 @@ export default function Photos() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://BMWtracker.nl/",
+          item: "https://Z3radar.com/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Photos",
-          item: "https://BMWtracker.nl/photos",
+          item: "https://Z3radar.com/photos",
         },
       ],
     });
@@ -266,10 +266,10 @@ export default function Photos() {
         <p className="text-gray-400 text-lg">
           {t("photos.footerSubtitle")}
           <a
-            href="mailto:info@BMWtracker.nl"
+            href="mailto:info@Z3 RADAR.nl"
             className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
           >
-            info@BMWtracker.nl
+            info@Z3 RADAR.nl
           </a>
         </p>
       </motion.div>

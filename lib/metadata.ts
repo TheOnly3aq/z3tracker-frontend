@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 export const siteConfig = {
-  name: "BMWTracker",
+  name: "Z3 RADAR",
   description:
     "Advanced RDW Data - Comprehensive insights into BMW Z3 vehicles in the Netherlands using RDW official data",
-  url: "https://BMWtracker.nl",
-  ogImage: "https://BMWtracker.nl/og-image.jpg",
+  url: "https://Z3radar.com",
+  ogImage: "https://Z3radar.com/og-image.jpg",
   keywords: [
     "BMW tracker",
     "BMW Z3",
@@ -106,12 +106,12 @@ export const siteConfig = {
   ],
   authors: [
     {
-      name: "BMWTracker Team",
-      url: "https://BMWtracker.nl",
+      name: "Z3 RADAR Team",
+      url: "https://Z3radar.com",
     },
   ],
-  creator: "BMWTracker",
-  publisher: "BMWTracker",
+  creator: "Z3 RADAR",
+  publisher: "Z3 RADAR",
   category: "Automotive Technology",
   classification: "Vehicle Tracking Platform",
   formatDetection: {
@@ -186,8 +186,8 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      creator: "@BMWtracker",
-      site: "@BMWtracker",
+      creator: "@Z3 RADAR",
+      site: "@Z3 RADAR",
     },
     facebook: {
       appId: "your-facebook-app-id", // Replace with actual app ID

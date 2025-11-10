@@ -70,9 +70,9 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: [
-      "https://BMWtracker.nl/sitemap.xml",
-      "https://BMWtracker.nl/sitemap-images.xml",
+      "https://Z3radar.com/sitemap.xml",
+      "https://Z3radar.com/sitemap-images.xml",
     ],
-    host: "https://BMWtracker.nl",
+    host: "https://Z3radar.com",
   };
 }

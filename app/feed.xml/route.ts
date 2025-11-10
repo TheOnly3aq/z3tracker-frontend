@@ -1,7 +1,7 @@
 import { NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
-  const baseUrl = "https://BMWtracker.nl";
+  const baseUrl = "https://Z3radar.com";
   const currentDate = new Date().toISOString();
 
   const rssXml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -10,31 +10,31 @@ export async function GET(request: NextRequest) {
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>BMWTracker - BMW Z3 Insights</title>
+    <title>Z3 RADAR - BMW Z3 Insights</title>
     <description>Latest updates and insights about BMW Z3 vehicles in the Netherlands</description>
     <link>${baseUrl}</link>
     <atom:link href="${baseUrl}/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
-    <managingEditor>team@BMWtracker.nl (BMWTracker Team)</managingEditor>
-    <webMaster>team@BMWtracker.nl (BMWTracker Team)</webMaster>
+    <managingEditor>team@Z3 RADAR.nl (Z3 RADAR Team)</managingEditor>
+    <webMaster>team@Z3 RADAR.nl (Z3 RADAR Team)</webMaster>
     <lastBuildDate>${currentDate}</lastBuildDate>
     <pubDate>${currentDate}</pubDate>
     <ttl>60</ttl>
     <image>
       <url>${baseUrl}/logo.png</url>
-      <title>BMWTracker</title>
+      <title>Z3 RADAR</title>
       <link>${baseUrl}</link>
       <width>512</width>
       <height>512</height>
     </image>
     
     <item>
-      <title>BMWTracker Platform Launch</title>
+      <title>Z3 RADAR Platform Launch</title>
       <description>Comprehensive BMW Z3 tracking platform now available with real-time RDW data integration</description>
       <link>${baseUrl}/about</link>
       <guid isPermaLink="true">${baseUrl}/about</guid>
       <pubDate>${currentDate}</pubDate>
-      <dc:creator>BMWTracker Team</dc:creator>
+      <dc:creator>Z3 RADAR Team</dc:creator>
       <category>Platform Updates</category>
     </item>
     
@@ -44,7 +44,7 @@ export async function GET(request: NextRequest) {
       <link>${baseUrl}/search</link>
       <guid isPermaLink="true">${baseUrl}/search</guid>
       <pubDate>${currentDate}</pubDate>
-      <dc:creator>BMWTracker Team</dc:creator>
+      <dc:creator>Z3 RADAR Team</dc:creator>
       <category>Features</category>
     </item>
     
@@ -54,7 +54,7 @@ export async function GET(request: NextRequest) {
       <link>${baseUrl}/</link>
       <guid isPermaLink="true">${baseUrl}/dashboard</guid>
       <pubDate>${currentDate}</pubDate>
-      <dc:creator>BMWTracker Team</dc:creator>
+      <dc:creator>Z3 RADAR Team</dc:creator>
       <category>Analytics</category>
     </item>
     

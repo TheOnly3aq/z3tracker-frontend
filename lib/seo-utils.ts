@@ -4,7 +4,7 @@ import { constructMetadata } from "./metadata";
 // Page-specific SEO configurations
 export const pageMetadata = {
   home: constructMetadata({
-    title: "BMWTracker - Track Your BMW Z3 with Confidence",
+    title: "Z3 RADAR - Track Your BMW Z3 with Confidence",
     description:
       "The ultimate BMW Z3 tracking platform in the Netherlands. Access real-time RDW data, vehicle statistics, registration trends, and comprehensive analytics dashboard.",
     keywords: [
@@ -36,7 +36,7 @@ export const pageMetadata = {
       "kenteken informatie platform",
       "auto gegevens dashboard",
     ],
-    canonical: "https://BMWtracker.nl/",
+    canonical: "https://Z3radar.com/",
   }),
 
   search: constructMetadata({
@@ -71,15 +71,15 @@ export const pageMetadata = {
       "RDW kenteken opzoeken",
       "auto registratie zoeken",
     ],
-    canonical: "https://BMWtracker.nl/search",
+    canonical: "https://Z3radar.com/search",
   }),
 
   about: constructMetadata({
-    title: "About BMWTracker - Technology, Mission & Platform Details",
+    title: "About Z3 RADAR - Technology, Mission & Platform Details",
     description:
-      "Learn about BMWTracker's cutting-edge technology stack, data sources, and mission to provide comprehensive BMW Z3 insights using official RDW data.",
+      "Learn about Z3 RADAR's cutting-edge technology stack, data sources, and mission to provide comprehensive BMW Z3 insights using official RDW data.",
     keywords: [
-      "BMWTracker technology",
+      "Z3 RADAR technology",
       "about automotive platform",
       "RDW data integration",
       "vehicle tracking technology",
@@ -88,7 +88,7 @@ export const pageMetadata = {
       "vehicle data platform",
       "car tracking technology",
       // Dutch keywords
-      "BMWTracker technologie",
+      "Z3 RADAR technologie",
       "over automotive platform",
       "RDW data integratie",
       "voertuig volgen technologie",
@@ -105,7 +105,7 @@ export const pageMetadata = {
       "RDW integratie platform",
       "automotive technologie Nederland",
     ],
-    canonical: "https://BMWtracker.nl/about",
+    canonical: "https://Z3radar.com/about",
   }),
 
   photos: constructMetadata({
@@ -139,7 +139,7 @@ export const pageMetadata = {
       "auto afbeeldingen Nederland",
       "BMW cabrio beelden",
     ],
-    canonical: "https://BMWtracker.nl/photos",
+    canonical: "https://Z3radar.com/photos",
   }),
 };
 
@@ -198,10 +198,10 @@ export function generateArticleLD(article: {
     },
     publisher: {
       "@type": "Organization",
-      name: "BMWTracker",
+      name: "Z3 RADAR",
       logo: {
         "@type": "ImageObject",
-        url: "https://BMWtracker.nl/logo.png",
+        url: "https://Z3radar.com/logo.png",
       },
     },
     datePublished: article.datePublished,
@@ -230,8 +230,8 @@ export function generateServiceLD() {
       "Comprehensive vehicle tracking and analytics service for BMW Z3 owners in the Netherlands",
     provider: {
       "@type": "Organization",
-      name: "BMWTracker",
-      url: "https://BMWtracker.nl",
+      name: "Z3 RADAR",
+      url: "https://Z3radar.com",
     },
     areaServed: {
       "@type": "Country",
@@ -281,7 +281,7 @@ export function generateSoftwareLD() {
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "BMWTracker",
+    name: "Z3 RADAR",
     operatingSystem: "Web Browser",
     applicationCategory: "BusinessApplication",
     aggregateRating: {

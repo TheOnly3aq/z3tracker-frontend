@@ -1,33 +1,33 @@
 import { NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
-  const baseUrl = "https://BMWtracker.nl";
+  const baseUrl = "https://Z3radar.com";
   const currentDate = new Date().toISOString();
 
   const atomXml = `<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>BMWTracker - BMW Z3 Insights</title>
+  <title>Z3 RADAR - BMW Z3 Insights</title>
   <subtitle>Latest updates and insights about BMW Z3 vehicles in the Netherlands</subtitle>
   <link href="${baseUrl}/atom.xml" rel="self"/>
   <link href="${baseUrl}"/>
   <id>${baseUrl}/</id>
   <author>
-    <name>BMWTracker Team</name>
-    <email>team@BMWtracker.nl</email>
+    <name>Z3 RADAR Team</name>
+    <email>team@Z3 RADAR.nl</email>
   </author>
   <updated>${currentDate}</updated>
-  <rights>© 2025 BMWTracker. All rights reserved.</rights>
+  <rights>© 2025 Z3 RADAR. All rights reserved.</rights>
   <icon>${baseUrl}/favicon.ico</icon>
   <logo>${baseUrl}/logo.png</logo>
 
   <entry>
-    <title>BMWTracker Platform Launch</title>
+    <title>Z3 RADAR Platform Launch</title>
     <link href="${baseUrl}/about"/>
     <id>${baseUrl}/about</id>
     <updated>${currentDate}</updated>
     <summary>Comprehensive BMW Z3 tracking platform now available with real-time RDW data integration</summary>
     <content type="html"><![CDATA[
-      <p>BMWTracker provides comprehensive insights into BMW Z3 vehicles in the Netherlands using official RDW data sources.</p>
+      <p>Z3 RADAR provides comprehensive insights into BMW Z3 vehicles in the Netherlands using official RDW data sources.</p>
       <p>Features include:</p>
       <ul>
         <li>Real-time vehicle registration data</li>
@@ -37,7 +37,7 @@ export async function GET(request: NextRequest) {
       </ul>
     ]]></content>
     <author>
-      <name>BMWTracker Team</name>
+      <name>Z3 RADAR Team</name>
     </author>
     <category term="Platform Updates"/>
   </entry>
@@ -59,7 +59,7 @@ export async function GET(request: NextRequest) {
       </ul>
     ]]></content>
     <author>
-      <name>BMWTracker Team</name>
+      <name>Z3 RADAR Team</name>
     </author>
     <category term="Features"/>
   </entry>

@@ -15,13 +15,13 @@ export default function About() {
 
   useEffect(() => {
     document.title =
-      "About BMWTracker - Technology, Mission & Platform Details | Netherlands";
+      "About Z3 RADAR - Technology, Mission & Platform Details | Netherlands";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Learn about BMWTracker's cutting-edge technology stack, data sources, and mission to provide comprehensive BMW Z3 insights using official RDW data in the Netherlands."
+        "Learn about Z3 RADAR's cutting-edge technology stack, data sources, and mission to provide comprehensive BMW Z3 insights using official RDW data in the Netherlands."
       );
     }
 
@@ -29,7 +29,7 @@ export default function About() {
     if (metaKeywords) {
       const currentKeywords = metaKeywords.getAttribute("content") || "";
       const additionalKeywords =
-        ", BMWTracker technology, about automotive platform, RDW data integration, vehicle tracking technology, Next.js automotive app, React vehicle platform, BMWTracker technologie, over automotive platform, RDW data integratie, voertuig volgen technologie, Next.js automotive app, React voertuig platform, auto platform technologie, voertuig tracking systeem, automotive platform architectuur, voertuig data platform, auto tracking technologie, Nederlandse auto platform, voertuig informatie systeem, auto gegevens technologie, RDW integratie platform, automotive technologie Nederland, over BMWTracker, bedrijfsinformatie automotive, auto platform details, voertuig platform informatie";
+        ", Z3 RADAR technology, about automotive platform, RDW data integration, vehicle tracking technology, Next.js automotive app, React vehicle platform, Z3 RADAR technologie, over automotive platform, RDW data integratie, voertuig volgen technologie, Next.js automotive app, React voertuig platform, auto platform technologie, voertuig tracking systeem, automotive platform architectuur, voertuig data platform, auto tracking technologie, Nederlandse auto platform, voertuig informatie systeem, auto gegevens technologie, RDW integratie platform, automotive technologie Nederland, over Z3 RADAR, bedrijfsinformatie automotive, auto platform details, voertuig platform informatie";
       metaKeywords.setAttribute(
         "content",
         currentKeywords + additionalKeywords
@@ -42,22 +42,22 @@ export default function About() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://BMWtracker.com/about");
+    canonical.setAttribute("href", "https://Z3 RADAR.com/about");
 
     const orgScript = document.createElement("script");
     orgScript.type = "application/ld+json";
     orgScript.textContent = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "AboutPage",
-      name: "About BMWTracker",
-      description: "Learn about BMWTracker's technology and mission",
-      url: "https://BMWtracker.com/about",
+      name: "About Z3 RADAR",
+      description: "Learn about Z3 RADAR's technology and mission",
+      url: "https://Z3 RADAR.com/about",
       mainEntity: {
         "@type": "Organization",
-        name: "BMWTracker",
+        name: "Z3 RADAR",
         description:
           "Leading platform for BMW Z3 vehicle tracking and analytics in the Netherlands",
-        url: "https://BMWtracker.com",
+        url: "https://Z3 RADAR.com",
         foundingDate: "2024",
         industry: "Automotive Technology",
         speciality: "Vehicle tracking and analytics",

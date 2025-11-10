@@ -96,7 +96,7 @@
     "french": "French"
   },
   "about": {
-    "title": "About BMWTracker",
+    "title": "About Z3 RADAR",
     "subtitle": "Learn about our technology, data sources, and design philosophy",
     "technologyStack": "Technology Stack",
     "frontend": "Frontend Technologies",
@@ -105,7 +105,7 @@
     "purposeAndDesign": "Purpose & Design",
     "whyThisDashboard": "Why This Platform?",
     "designPhilosophy": "Design Philosophy",
-    "dashboardDescription": "BMWTracker provides comprehensive insights into BMW Z3 vehicles in the Netherlands, helping owners and enthusiasts track vehicle statistics, registration trends, and market data through an intuitive dashboard interface.",
+    "dashboardDescription": "Z3 RADAR provides comprehensive insights into BMW Z3 vehicles in the Netherlands, helping owners and enthusiasts track vehicle statistics, registration trends, and market data through an intuitive dashboard interface.",
     "designPhilosophyDescription": "Built with modern web technologies and responsive design principles, our platform prioritizes user experience, performance, and accessibility while providing real-time data visualization and analytics.",
     "apiEndpoints": "API Endpoints",
     "dataProcessing": "Data Processing",

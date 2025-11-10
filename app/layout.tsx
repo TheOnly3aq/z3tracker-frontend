@@ -35,8 +35,8 @@ export default function RootLayout({ children }: Props) {
   const webAppLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: "BMWTracker",
-    url: "https://BMWtracker.nl",
+    name: "Z3 RADAR",
+    url: "https://Z3radar.com",
     description:
       "Geavanceerde RDW Data - Uitgebreide inzichten in BMW Z3 voertuigen in Nederland met officiële RDW gegevens",
     applicationCategory: "Automotive",
@@ -61,14 +61,14 @@ export default function RootLayout({ children }: Props) {
       "Responsief ontwerp",
       "Datavisualisatie",
     ],
-    downloadUrl: "https://BMWtracker.nl",
+    downloadUrl: "https://Z3radar.com",
     author: {
       "@type": "Organization",
-      name: "BMWTracker",
-      url: "https://BMWtracker.nl",
+      name: "Z3 RADAR",
+      url: "https://Z3radar.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://BMWtracker.nl/logo.png",
+        url: "https://Z3radar.com/logo.png",
         width: 512,
         height: 512,
       },
@@ -80,24 +80,24 @@ export default function RootLayout({ children }: Props) {
     },
     publisher: {
       "@type": "Organization",
-      name: "BMWTracker",
+      name: "Z3 RADAR",
       logo: {
         "@type": "ImageObject",
-        url: "https://BMWtracker.nl/logo.png",
+        url: "https://Z3radar.com/logo.png",
         width: 512,
         height: 512,
       },
     },
     mainEntity: {
       "@type": "SoftwareApplication",
-      name: "BMWTracker Dashboard",
+      name: "Z3 RADAR Dashboard",
       applicationCategory: "Automotive Analytics",
       operatingSystem: "Webbrowser",
     },
     potentialAction: [
       {
         "@type": "ViewAction",
-        target: "https://BMWtracker.nl/dashboard",
+        target: "https://Z3radar.com/dashboard",
         name: "Dashboard bekijken",
       },
     ],
@@ -129,8 +129,8 @@ export default function RootLayout({ children }: Props) {
   const orgLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "BMWTracker",
-    url: "https://BMWtracker.nl",
+    name: "Z3 RADAR",
+    url: "https://Z3radar.com",
     description:
       "Toonaangevend platform voor BMW Z3 voertuigvolging en analyses in Nederland",
     foundingDate: "2024",
@@ -141,21 +141,21 @@ export default function RootLayout({ children }: Props) {
       addressCountry: "NL",
       addressRegion: "Nederland",
     },
-    sameAs: ["https://github.com/TheOnly3aq/BMWtracker"],
+    sameAs: ["https://github.com/TheOnly3aq/Z3 RADAR"],
   };
 
   const siteLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "BMWTracker",
-    url: "https://BMWtracker.nl",
+    name: "Z3 RADAR",
+    url: "https://Z3radar.com",
     description:
       "Uitgebreid BMW Z3 voertuigvolgingsplatform met officiële RDW gegevens",
     inLanguage: ["en", "nl"],
     isPartOf: {
       "@type": "WebSite",
-      name: "BMWTracker",
-      url: "https://BMWtracker.nl",
+      name: "Z3 RADAR",
+      url: "https://Z3radar.com",
     },
     mainEntity: {
       "@type": "ItemList",
@@ -164,25 +164,25 @@ export default function RootLayout({ children }: Props) {
           "@type": "SiteNavigationElement",
           position: 1,
           name: "Dashboard",
-          url: "https://BMWtracker.nl/",
+          url: "https://Z3radar.com/",
         },
         {
           "@type": "SiteNavigationElement",
           position: 2,
           name: "Zoeken",
-          url: "https://BMWtracker.nl/search",
+          url: "https://Z3radar.com/search",
         },
         {
           "@type": "SiteNavigationElement",
           position: 3,
           name: "Foto's",
-          url: "https://BMWtracker.nl/photos",
+          url: "https://Z3radar.com/photos",
         },
         {
           "@type": "SiteNavigationElement",
           position: 4,
           name: "Over ons",
-          url: "https://BMWtracker.nl/about",
+          url: "https://Z3radar.com/about",
         },
       ],
     },
@@ -191,12 +191,11 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>BMWTracker - Track Your BMW Z3 with Confidence</title>
+        <title>Z3 RADAR - Track Your BMW Z3 with Confidence</title>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: safeJsonLd(webAppLd) }}
         />
-        <link rel="icon" href="/logo1.png?v=3" sizes="any" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: safeJsonLd(orgLd) }}

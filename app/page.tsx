@@ -13,7 +13,7 @@ export default function Dashboard() {
   const { t } = useLanguage();
 
   useEffect(() => {
-    document.title = "BMWTracker - Tracking data for the BMW Z3| Netherlands";
+    document.title = "Z3 RADAR - Tracking data for the BMW Z3| Netherlands";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -40,7 +40,7 @@ export default function Dashboard() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", "https://BMWtracker.nl/");
+    canonical.setAttribute("href", "https://Z3radar.com/");
 
     const breadcrumbScript = document.createElement("script");
     breadcrumbScript.type = "application/ld+json";
@@ -52,13 +52,13 @@ export default function Dashboard() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://BMWtracker.nl/",
+          item: "https://Z3radar.com/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Dashboard",
-          item: "https://BMWtracker.nl/",
+          item: "https://Z3radar.com/",
         },
       ],
     });

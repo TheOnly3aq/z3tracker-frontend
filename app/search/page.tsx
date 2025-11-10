@@ -100,63 +100,65 @@ export default function Search() {
         fetchCars();
 
         document.title =
-            "Vehicle Search - Find Any BMW Z3 in Netherlands Database | BMWTracker";
+          "Vehicle Search - Find Any BMW Z3 in Netherlands Database | Z3 RADAR";
 
-        const metaDescription = document.querySelector('meta[name="description"]');
+        const metaDescription = document.querySelector(
+          'meta[name="description"]'
+        );
         if (metaDescription) {
-            metaDescription.setAttribute(
-                "content",
-                "Search through comprehensive BMW Z3 database using official RDW data. Find vehicle registration details, insurance status, specifications, and complete history instantly."
-            );
+          metaDescription.setAttribute(
+            "content",
+            "Search through comprehensive BMW Z3 database using official RDW data. Find vehicle registration details, insurance status, specifications, and complete history instantly."
+          );
         }
 
         const metaKeywords = document.querySelector('meta[name="keywords"]');
         if (metaKeywords) {
-            const currentKeywords = metaKeywords.getAttribute("content") || "";
-            const additionalKeywords =
-                ", BMW vehicle search, RDW database lookup, vehicle registration search, BMW Z3 finder, Netherlands car database, license plate lookup, BMW voertuig zoeken, RDW database opzoeken, voertuigregistratie zoeken, BMW Z3 vinder, Nederland auto database, kenteken opzoeken, auto zoeken Nederland, voertuiggegevens zoeken, auto database zoeken, voertuig geschiedenis zoeken, kenteken check, auto informatie zoeken, voertuig opzoeken Nederland, Nederlandse auto zoeken, RDW kenteken opzoeken, auto registratie zoeken, voertuig database Nederland, auto gegevens opzoeken, RDW gegevens zoeken";
-            metaKeywords.setAttribute(
-                "content",
-                currentKeywords + additionalKeywords
-            );
+          const currentKeywords = metaKeywords.getAttribute("content") || "";
+          const additionalKeywords =
+            ", BMW vehicle search, RDW database lookup, vehicle registration search, BMW Z3 finder, Netherlands car database, license plate lookup, BMW voertuig zoeken, RDW database opzoeken, voertuigregistratie zoeken, BMW Z3 vinder, Nederland auto database, kenteken opzoeken, auto zoeken Nederland, voertuiggegevens zoeken, auto database zoeken, voertuig geschiedenis zoeken, kenteken check, auto informatie zoeken, voertuig opzoeken Nederland, Nederlandse auto zoeken, RDW kenteken opzoeken, auto registratie zoeken, voertuig database Nederland, auto gegevens opzoeken, RDW gegevens zoeken";
+          metaKeywords.setAttribute(
+            "content",
+            currentKeywords + additionalKeywords
+          );
         }
 
         let canonical = document.querySelector('link[rel="canonical"]');
         if (!canonical) {
-            canonical = document.createElement("link");
-            canonical.setAttribute("rel", "canonical");
-            document.head.appendChild(canonical);
+          canonical = document.createElement("link");
+          canonical.setAttribute("rel", "canonical");
+          document.head.appendChild(canonical);
         }
-        canonical.setAttribute("href", "https://BMWtracker.nl/search");
+        canonical.setAttribute("href", "https://Z3radar.com/search");
 
         const searchScript = document.createElement("script");
         searchScript.type = "application/ld+json";
         searchScript.textContent = JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            name: "Vehicle Search",
-            description: "Search BMW Z3 database using official RDW data",
-            url: "https://BMWtracker.nl/search",
-            potentialAction: {
-                "@type": "SearchAction",
-                target: {
-                    "@type": "EntryPoint",
-                    urlTemplate: "https://BMWtracker.nl/search?q={search_term_string}",
-                },
-                "query-input": "required name=search_term_string",
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: "Vehicle Search",
+          description: "Search BMW Z3 database using official RDW data",
+          url: "https://Z3radar.com/search",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: {
+              "@type": "EntryPoint",
+              urlTemplate: "https://Z3radar.com/search?q={search_term_string}",
             },
-            mainEntity: {
-                "@type": "Dataset",
-                name: "BMW Z3 Vehicle Database",
-                description:
-                    "Comprehensive database of BMW Z3 vehicles in the Netherlands",
-                url: "https://BMWtracker.nl/search",
-                provider: {
-                    "@type": "Organization",
-                    name: "BMWTracker",
-                    url: "https://BMWtracker.nl",
-                },
+            "query-input": "required name=search_term_string",
+          },
+          mainEntity: {
+            "@type": "Dataset",
+            name: "BMW Z3 Vehicle Database",
+            description:
+              "Comprehensive database of BMW Z3 vehicles in the Netherlands",
+            url: "https://Z3radar.com/search",
+            provider: {
+              "@type": "Organization",
+              name: "Z3 RADAR",
+              url: "https://Z3radar.com",
             },
+          },
         });
         document.head.appendChild(searchScript);
 

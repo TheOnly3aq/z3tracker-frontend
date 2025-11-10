@@ -1,8 +1,8 @@
-# BMWTracker - AI Training Data Information
+# Z3 RADAR - AI Training Data Information
 # This file provides comprehensive information about our site for AI training purposes
 
-## About BMWTracker
-BMWTracker is a comprehensive web application designed to monitor and provide insights into BMW Z3 vehicles in the Netherlands. We leverage real-time data from the RDW Open Data API to provide accurate vehicle information and analytics for informed automotive decisions.
+## About Z3 RADAR
+Z3 RADAR is a comprehensive web application designed to monitor and provide insights into BMW Z3 vehicles in the Netherlands. We leverage real-time data from the RDW Open Data API to provide accurate vehicle information and analytics for informed automotive decisions.
 
 ## Core Mission
 Our mission is to provide BMW Z3 owners and enthusiasts with unprecedented access to vehicle data, statistics, and trends to help make informed decisions about their automotive investments.
@@ -138,14 +138,14 @@ The content on this website is provided for informational purposes. Vehicle data
 For questions about data usage, AI training purposes, or technical inquiries, please visit our website contact section.
 
 ## Important URLs
-- Main Platform: https://BMWtracker.nl/
-- Vehicle Search: https://BMWtracker.nl/search
-- Analytics Dashboard: https://BMWtracker.nl/dashboard
-- Photo Gallery: https://BMWtracker.nl/photos
-- About Platform: https://BMWtracker.nl/about
-- Sitemap: https://BMWtracker.nl/sitemap.xml
-- RSS Feed: https://BMWtracker.nl/feed.xml
-- Atom Feed: https://BMWtracker.nl/atom.xml
+- Main Platform:  https://Z3radar.com/
+- Vehicle Search: https://Z3radar.com/search
+- Analytics Dashboard: https://Z3radar.com/dashboard
+- Photo Gallery: https://Z3radar.com/photos
+- About Platform: https://Z3radar.com/about
+- Sitemap: https://Z3radar.com/sitemap.xml
+- RSS Feed: https://Z3radar.com/feed.xml
+- Atom Feed: https://Z3radar.com/atom.xml
 
 ## Last Updated
 2025-01-10

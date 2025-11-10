@@ -4,14 +4,14 @@
 <div align="center">
 
 
-# BMWTRACKER
+# Z3 RADAR
 
 <em>Advanced RDW Data</em>
 
 <!-- BADGES -->
-<img src="https://img.shields.io/github/last-commit/TheOnly3aq/BMWtracker?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-<img src="https://img.shields.io/github/languages/top/TheOnly3aq/BMWtracker?style=flat&color=0080ff" alt="repo-top-language">
-<img src="https://img.shields.io/github/languages/count/TheOnly3aq/BMWtracker?style=flat&color=0080ff" alt="repo-language-count">
+<img src="https://img.shields.io/github/last-commit/TheOnly3aq/Z3 RADAR?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/TheOnly3aq/Z3 RADAR?style=flat&color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/TheOnly3aq/Z3 RADAR?style=flat&color=0080ff" alt="repo-language-count">
 
 <em>Built with the tools and technologies:</em>
 
@@ -44,9 +44,9 @@
 
 ## Overview
 
-BMWTracker is a powerful web application designed to monitor and provide insights into BMW Z3 vehicles in the Netherlands, leveraging real-time data from the RDW Open Data API.
+Z3 RADAR is a powerful web application designed to monitor and provide insights into BMW Z3 vehicles in the Netherlands, leveraging real-time data from the RDW Open Data API.
 
-**Why BMWTracker?**
+**Why Z3 RADAR?**
 
 This project aims to enhance the ownership experience of BMW Z3 vehicles by providing comprehensive insights and user-friendly features. The core features include:
 
@@ -70,18 +70,18 @@ This project requires the following dependencies:
 
 ### Installation
 
-Build BMWtracker from the source and intsall dependencies:
+Build Z3 RADAR from the source and intsall dependencies:
 
 1. **Clone the repository:**
 
     ```sh
-    ❯ git clone https://github.com/TheOnly3aq/BMWtracker
+    ❯ git clone https://github.com/TheOnly3aq/Z3 RADAR
     ```
 
 2. **Navigate to the project directory:**
 
     ```sh
-    ❯ cd BMWtracker
+    ❯ cd Z3 RADAR
     ```
 
 3. **Install the dependencies:**
@@ -104,7 +104,7 @@ npm start
 
 ### Testing
 
-BMWtracker uses the {__test_framework__} test framework. Run the test suite with:
+Z3 RADAR uses the {__test_framework__} test framework. Run the test suite with:
 
 **Using [npm](https://www.npmjs.com/):**
 

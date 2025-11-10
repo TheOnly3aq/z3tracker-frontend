@@ -96,7 +96,7 @@
     "french": "Frans"
   },
   "about": {
-    "title": "Over BMWTracker",
+    "title": "Over Z3 RADAR",
     "subtitle": "Leer over onze technologie, gegevensbronnen en ontwerpfilosofie",
     "technologyStack": "Technologie Stack",
     "frontend": "Frontend Technologieën",
@@ -105,7 +105,7 @@
     "purposeAndDesign": "Doel & Ontwerp",
     "whyThisDashboard": "Waarom dit platform?",
     "designPhilosophy": "Ontwerpfilosofie",
-    "dashboardDescription": "BMWTracker biedt uitgebreide inzichten in BMW Z3 voertuigen in Nederland, en helpt eigenaren en liefhebbers om voertuigstatistieken, registratietrends en marktgegevens te volgen via een intuïtieve dashboard-interface.",
+    "dashboardDescription": "Z3 RADAR biedt uitgebreide inzichten in BMW Z3 voertuigen in Nederland, en helpt eigenaren en liefhebbers om voertuigstatistieken, registratietrends en marktgegevens te volgen via een intuïtieve dashboard-interface.",
     "designPhilosophyDescription": "Gebouwd met moderne webtechnologieën en responsieve ontwerpprincipes, geeft ons platform prioriteit aan gebruikerservaring, prestaties en toegankelijkheid terwijl het real-time datavisualisatie en analyses biedt.",
     "apiEndpoints": "API Eindpunten",
     "dataProcessing": "Gegevensverwerking",
