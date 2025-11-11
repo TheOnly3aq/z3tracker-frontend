@@ -58,7 +58,7 @@ export default function Sidebar() {
                   <img src="/logo.svg" alt="Logo" className="w-8 h-8" />
                 </div>
                 <h1 className="text-xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                  BMW Tracker
+                  Z3 RADAR
                 </h1>
               </div>
             </div>
