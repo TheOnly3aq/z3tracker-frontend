@@ -3,18 +3,23 @@ import { prisma } from "@/lib/prisma";
 
 export async function GET(request: NextRequest) {
   try {
-    if (process.env.NODE_ENV === "production" && !process.env.DATABASE_URL) {
-      console.warn("Database URL not available during build");
-      return NextResponse.json([]);
+    const { searchParams } = new URL(request.url);
+    const website = searchParams.get("website");
+
+    const whereClause: {
+      active: boolean;
+      website?: "LexusTracker" | "Z3Radar";
+    } = {
+      active: true,
+    };
+
+    if (website && (website === "LexusTracker" || website === "Z3Radar")) {
+      whereClause.website = website as "LexusTracker" | "Z3Radar";
     }
 
     const photos = await prisma.photo.findMany({
-      where: {
-        active: true,
-      },
-      orderBy: {
-        order: "asc",
-      },
+      where: whereClause,
+      orderBy: { order: "asc" },
       select: {
         id: true,
         title: true,
@@ -30,10 +35,6 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(photos);
   } catch (error) {
     console.error("Error fetching photos:", error);
-
-    if (process.env.NODE_ENV === "production") {
-      return NextResponse.json([]);
-    }
 
     return NextResponse.json(
       { error: "Failed to fetch photos" },

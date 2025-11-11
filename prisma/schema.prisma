@@ -16,6 +16,7 @@ model Photo {
   active      Boolean  @default(true)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+  website     Website  @default(LexusTracker)
   likes       likes[]
 
   @@map("photos")
@@ -99,4 +100,9 @@ model services {
   active      Boolean  @default(true)
   createdAt   DateTime @default(now())
   updatedAt   DateTime
+}
+
+enum Website {
+  LexusTracker
+  Z3Radar
 }

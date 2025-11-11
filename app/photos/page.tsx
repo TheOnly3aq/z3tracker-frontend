@@ -12,7 +12,7 @@ import { usePhotos } from "@/hooks/use-photos";
 export default function Photos() {
   const [likedPhotos, setLikedPhotos] = useState<Set<string>>(new Set());
   const { t } = useLanguage();
-  const { photos, loading, error, refetch } = usePhotos();
+  const { photos, loading, error, refetch } = usePhotos({ website: "Z3Radar" });
 
   useEffect(() => {
     const savedLikes = Cookies.get("likedPhotos");

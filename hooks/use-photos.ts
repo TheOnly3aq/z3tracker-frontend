@@ -18,7 +18,11 @@ export interface UsePhotosReturn {
   refetch: () => void;
 }
 
-export const usePhotos = (): UsePhotosReturn => {
+export interface UsePhotosParams {
+  website?: "LexusTracker" | "Z3Radar";
+}
+
+export const usePhotos = (params?: UsePhotosParams): UsePhotosReturn => {
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -28,7 +32,13 @@ export const usePhotos = (): UsePhotosReturn => {
       setLoading(true);
       setError(null);
 
-      const response = await fetch("/api/photos");
+      // Build URL with optional website query parameter
+      const url = new URL("/api/photos", window.location.origin);
+      if (params?.website) {
+        url.searchParams.set("website", params.website);
+      }
+
+      const response = await fetch(url.toString());
       if (!response.ok) {
         throw new Error(`Failed to fetch photos: ${response.status}`);
       }
@@ -47,7 +57,8 @@ export const usePhotos = (): UsePhotosReturn => {
 
   useEffect(() => {
     fetchPhotos();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [params?.website]);
 
   return {
     photos,

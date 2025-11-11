@@ -26,17 +26,15 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>("nl"); // Default to Dutch
+  const [locale, setLocaleState] = useState<Locale>("nl");
   const router = useRouter();
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    // Check URL for language parameter first
     const urlLang = searchParams.get("lng");
 
     if (urlLang === "en") {
       setLocaleState("en");
-      // Store preference in localStorage and cookie
       if (typeof window !== "undefined") {
         localStorage.setItem("preferred-language", "en");
         document.cookie = `preferred-language=en; max-age=${
@@ -46,7 +44,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
         }`;
       }
     } else if (urlLang === null) {
-      // No URL parameter, check localStorage for preference
       if (typeof window !== "undefined") {
         const storedLang = localStorage.getItem("preferred-language");
         const cookieLang = document.cookie
@@ -58,7 +55,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
         if (preferredLang === "en") {
           setLocaleState("en");
-          // Update URL to reflect stored preference
           const currentPath = window.location.pathname;
           const currentSearch = new URLSearchParams(window.location.search);
           currentSearch.set("lng", "en");
@@ -68,11 +64,10 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
           setLocaleState("nl");
         }
       } else {
-        setLocaleState("nl"); // Default to Dutch
+        setLocaleState("nl");
       }
     } else {
-      setLocaleState("nl"); // Default to Dutch
-      // Store preference in localStorage and cookie
+      setLocaleState("nl");
       if (typeof window !== "undefined") {
         localStorage.setItem("preferred-language", "nl");
         document.cookie = `preferred-language=nl; max-age=${
@@ -87,7 +82,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
 
-    // Store preference in localStorage and cookie
     if (typeof window !== "undefined") {
       localStorage.setItem("preferred-language", newLocale);
       document.cookie = `preferred-language=${newLocale}; max-age=${
@@ -97,14 +91,13 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       }`;
     }
 
-    // Update URL with language parameter
     const currentPath = window.location.pathname;
     const currentSearch = new URLSearchParams(window.location.search);
 
     if (newLocale === "en") {
       currentSearch.set("lng", "en");
     } else {
-      currentSearch.delete("lng"); // Remove parameter for Dutch (default)
+      currentSearch.delete("lng");
     }
 
     const newSearch = currentSearch.toString();
@@ -113,7 +106,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     router.push(newUrl);
   };
 
-  // Helper function to get nested translations
   const t = (key: string, values: Record<string, any> = {}): string => {
     const keys = key.split(".");
     let value: any = messages[locale];
@@ -123,12 +115,11 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
         value = value[k];
       } else {
         console.warn(`Translation key not found: ${key} for locale: ${locale}`);
-        return key; // Return the key if translation not found
+        return key;
       }
     }
 
     if (typeof value === "string") {
-      // Simple placeholder replacement
       return Object.keys(values).reduce((str, placeholder) => {
         return str.replace(
           new RegExp(`{${placeholder}}`, "g"),
@@ -143,7 +134,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     return key;
   };
 
-  // Helper function to generate localized paths
   const getLocalizedPath = (path: string): string => {
     if (locale === "en") {
       const separator = path.includes("?") ? "&" : "?";
