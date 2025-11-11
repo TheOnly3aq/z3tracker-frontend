@@ -269,7 +269,7 @@ export default function Photos() {
             href="mailto:info@Z3 RADAR.nl"
             className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
           >
-            info@Z3 RADAR.nl
+            info@z3radar.com
           </a>
         </p>
       </motion.div>
