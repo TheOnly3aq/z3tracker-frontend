@@ -212,6 +212,20 @@ export default function Photos() {
                   />
                 </motion.div>
 
+                {photo.title && photo.description && (
+                  <a
+                    href={photo.description}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute bottom-3 left-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <span className="text-xs text-gray-400 font-medium px-2 py-1 rounded border border-gray-400/30 bg-black/20 backdrop-blur-sm">
+                      {photo.title}
+                    </span>
+                  </a>
+                )}
+
                 {/* Like button - positioned outside the scaled container */}
                 <motion.div
                   className="absolute top-3 right-3 flex items-center justify-center z-10"
