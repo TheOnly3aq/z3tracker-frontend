@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
   <id>${baseUrl}/</id>
   <author>
     <name>Z3 RADAR Team</name>
-    <email>team@Z3 RADAR.nl</email>
+    <email>info@z3radar.com</email>
   </author>
   <updated>${currentDate}</updated>
   <rights>© 2025 Z3 RADAR. All rights reserved.</rights>

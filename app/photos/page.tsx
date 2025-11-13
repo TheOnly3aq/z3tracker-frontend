@@ -280,7 +280,7 @@ export default function Photos() {
         <p className="text-gray-400 text-lg">
           {t("photos.footerSubtitle")}
           <a
-            href="mailto:info@Z3 RADAR.nl"
+            href="mailto:info@z3radar.com"
             className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
           >
             info@z3radar.com

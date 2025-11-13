@@ -15,8 +15,8 @@ export async function GET(request: NextRequest) {
     <link>${baseUrl}</link>
     <atom:link href="${baseUrl}/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
-    <managingEditor>team@Z3 RADAR.nl (Z3 RADAR Team)</managingEditor>
-    <webMaster>team@Z3 RADAR.nl (Z3 RADAR Team)</webMaster>
+    <managingEditor>team@z3radar.com (Z3 RADAR Team)</managingEditor>
+    <webMaster>team@z3radar.com (Z3 RADAR Team)</webMaster>
     <lastBuildDate>${currentDate}</lastBuildDate>
     <pubDate>${currentDate}</pubDate>
     <ttl>60</ttl>
